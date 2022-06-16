@@ -1,0 +1,26 @@
+.cb-container{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #8338EC;
+}
+
+.fake{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    position: relative;
+}
+
+.classy-butt{
+    /* display; */
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: 80vh;
+}
