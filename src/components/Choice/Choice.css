@@ -9,10 +9,17 @@
     background-color: #FFBE0B;
 }
 
+.choice-box{
+    width: 70vw;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .choice-img{
     /* position: absolute;
     top: 0%;
     left: 50vw; */
-    width: 60vw;
-    height: auto;
+    width: auto;
+    height: 55vh;
 }
