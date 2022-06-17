@@ -21,17 +21,36 @@
 }
 
 .butt-half-land{
+    display: flex;
+    float: left;
+    height: 100vh;
+    width: auto;
     left: 0;
     z-index: 2;
 }
-/* .fake-drag{
-    position: absolute;
-    border: 2px solid black;
+
+.fake-space{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aqua; */
     z-index: 1;
-} */
+    display: flex;
+}
+
+.fake-filler{
+    display: flex;
+    float: right;
+    width: 100%;
+    height: 100vh;
+    /* background-color: antiquewhite; */
+    z-index: 1;
+}
+
 .joint-land{
+    position: absolute;
     height: 30vh;
     width: auto;
+    /* border: 2px solid black; */
     z-index: 1;
 }
 
