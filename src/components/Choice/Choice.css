@@ -22,4 +22,9 @@
     left: 50vw; */
     width: auto;
     height: 55vh;
+    transition: 0.5s ease-in-out;
+}
+
+.choice-img:hover{
+    transform: scale(1.2);
 }
