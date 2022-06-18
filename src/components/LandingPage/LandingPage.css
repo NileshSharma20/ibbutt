@@ -9,6 +9,14 @@
     /* border: 5px solid black; */
 }
 
+.text-box{
+    font-size: 4rem;
+    color: black;
+    position: fixed;
+    top:5vh;
+    left:40vw;
+}
+
 .landing-img{
     height: 100vh;
     width: auto;

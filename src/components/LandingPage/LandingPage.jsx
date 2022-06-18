@@ -1,15 +1,18 @@
 import {useState, useRef, useEffect} from 'react'
 import './LandingPage.css'
 import {motion} from "framer-motion"
+import { useNavigate } from 'react-router-dom'
 
 function LandingPage() {
+  const navigate = useNavigate();
+
   const leftCheekRef = useRef()
   const jointRef = useRef()
   const fakeFillerRef = useRef()
   const lconRef = useRef()
   
   const [cheekWidth, setCheekWidth] = useState(0);
-  const [fakeRefX, setFakeRefX] = useState();
+  // const [fakeRefX, setFakeRefX] = useState();
   const [lconWidth, setLconWidth] = useState();
   const [diff, setDiff] = useState(0)
   const [logicCounter, setLogicCounter] = useState(1)
@@ -31,11 +34,11 @@ function LandingPage() {
     }
   }
 
-  const getFakeRefPosition = () => {
-    const fx = fakeFillerRef.current.offsetLeft;
-    console.log(`fakeRef: ${fakeFillerRef.current.offsetLeft}`)
-    setFakeRefX(fx);
-  }
+  // const getFakeRefPosition = () => {
+  //   const fx = fakeFillerRef.current.offsetLeft;
+  //   console.log(`fakeRef: ${fakeFillerRef.current.offsetLeft}`)
+  //   setFakeRefX(fx);
+  // }
 
   const getLconWidth = () => {
     const lw = lconRef.current.offsetWidth
@@ -55,9 +58,20 @@ function LandingPage() {
     
   }
 
+  // useEffect(()=>{
+  //   console.log(`${isAnimating}`)
+  // },[isAnimating])
+
   useEffect(()=>{
-    console.log(`${isAnimating}`)
-  },[isAnimating])
+    if(smoke){
+      setTimeout(()=>{
+        // setLoadingDesktop(false)
+        navigate('/choice')
+      },2300)
+      // passLandingFlag(false)
+      
+    }
+  },[smoke])
 
 
   useEffect(()=>{
@@ -65,11 +79,11 @@ function LandingPage() {
     setCheekWidth(leftCheekRef.current.offsetWidth)
   },[cheekWidth])
 
-  useEffect(()=>{
-    // console.log(`jointX: ${jointRef.current.offsetLeft}`)
-      getFakeRefPosition();
+  // useEffect(()=>{
+  //   console.log(`jointX: ${jointRef.current.offsetLeft}`)
+  //     getFakeRefPosition();
 
-  },[])
+  // },[])
 
   useEffect(()=>{
     const mouseMove= e =>{
@@ -79,18 +93,18 @@ function LandingPage() {
       })
     }
 
-    getFakeRefPosition();
+    // getFakeRefPosition();
     getLconWidth()
 
     window.addEventListener("mousemove",mouseMove)
 
     window.addEventListener("resize", getLconWidth);
-    window.addEventListener("resize", getFakeRefPosition)
+    // window.addEventListener("resize", getFakeRefPosition)
 
     return () => { 
       window.removeEventListener("mousemove",mouseMove)
       window.removeEventListener("resize", getLconWidth);
-      window.removeEventListener("resize", getFakeRefPosition)
+      // window.removeEventListener("resize", getFakeRefPosition)
     }
   },[])
 
@@ -104,6 +118,15 @@ function LandingPage() {
 
   return (
     <div className='landing-container' ref={lconRef}>
+        {!isAnimating && 
+        <div className='text-box'>
+          Pass me the Blunt bro!
+        </div>}
+
+        {isAnimating && !smoke && 
+        <div className='text-box'>
+          Light it up!
+        </div>}
         
         <img className='landing-img butt-land' 
           src="images/lightbutt.png" 
