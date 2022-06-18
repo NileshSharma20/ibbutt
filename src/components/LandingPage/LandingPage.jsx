@@ -29,10 +29,6 @@ function LandingPage() {
       x: mousePosition.x+ 5,
       y: mousePosition.y - 16
     }
-
-    // burnt:{
-
-    // }
   }
 
   const getFakeRefPosition = () => {
@@ -135,14 +131,27 @@ function LandingPage() {
             src="images/Only_joint(1).png" 
             alt = "joint"
             />
+          
+        
           {isAnimating&&smoke?
+          <div className="smoke-box">
             <motion.img className='smoke-img' 
               src= "images/smoke.png" 
               alt="smoke"
               initial={{opacity:0}}
               animate={{opacity:1}}
               transition={{duration:0.8}} />
+            
+            <motion.img className='burnt-img' 
+              src= "images/BurntPart.png" 
+              alt="burnt"
+              initial={{opacity:0}}
+              animate={{opacity:1}}
+              transition={{duration:0.8}} />
+          </div>
             :<></>}
+
+        
         </motion.div>
         {isAnimating?
         <motion.img
