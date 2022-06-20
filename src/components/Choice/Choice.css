@@ -6,7 +6,9 @@
     align-items: center;
     justify-content: center;
 
-    background-color: #FFBE0B;
+    background: url(../../background-image/rainbow-back.png) no-repeat center fixed;
+    background-size: cover;
+    /* background-color: #FFBE0B; */
 }
 
 .choice-box{
@@ -26,12 +28,12 @@
 }
 
 .choice-img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .choice-text{
     position: fixed;
-    bottom:8vh;
+    top:8vh;
     font-size: 4rem;
     color:  black;
 }

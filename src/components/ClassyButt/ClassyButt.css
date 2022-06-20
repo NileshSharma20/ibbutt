@@ -1,14 +1,21 @@
 .cb-container{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background-color: #8338EC;
+    background: url(../../background-image/rays-back.png) fixed center no-repeat;
+
+    /* background-color: #90be6d; */
     font-size: 5rem;
     color: black;
+}
+
+.failed-back{
+    background-color: none;
+    background: url(../../background-image/galaxy-back.png);
 }
 
 .fake{
@@ -16,6 +23,31 @@
     height: 100vh;
     background-color: transparent;
     position: relative;
+}
+
+.failed-text{
+    position:absolute;
+    bottom: 30vh;
+    right: 30vw;
+    width: auto;
+    height: 70vh;
+
+}
+
+.return-btn{
+    position: fixed;
+    bottom: 5vh;
+    left: 5vw;
+    font-size: 3rem;
+    background-color: blanchedalmond;
+    padding: 0.2rem 0.6rem;
+    border: 1rem solid black;
+    transition: 0.3s ease-in-out;
+    cursor:pointer;
+}
+
+.return-btn:hover{
+    transform: scale(0.9);
 }
 
 .classy-butt{

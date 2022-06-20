@@ -32,7 +32,7 @@ function Choice() {
         onClick={()=>setPassedFlag(true)}
         alt = "test"/>
       </div>
-      <div className="choice-text">Choose carefully!</div>
+      <div className="choice-text">Choose wisely!</div>
     </div>
   )
 }

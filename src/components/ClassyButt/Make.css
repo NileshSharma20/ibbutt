@@ -1,0 +1,100 @@
+.make-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #faa275;
+    position: relative;
+    background: url(../../background-image/rays-back.png) fixed center no-repeat;
+}
+
+.make-heading{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    /* border: 2px solid black; */
+    margin-top: 5rem ;
+    font-size: 5rem;
+}
+
+.make-heading>h1{
+    font-size: 6rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.make-generator{
+    width: 100%;
+    height: 80vh;
+    /* border: 2px solid red; */
+}
+
+.make-box{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    right: 15vw;
+    bottom:0;
+    min-height: 20vh;
+    max-height: 80vh;
+    width: auto;
+    background-color:#F551BE; 
+    /* #fc2f00; */
+    border: 1rem solid black;
+}
+
+.make-butt-full{
+    position: absolute;
+    bottom: 0;
+    left: 10vw;
+    height: 70vh;
+    width: auto;
+    object-fit:contain;
+    border: 1rem solid black;
+}
+
+.item-select{
+    width: 25vw;
+    padding: 10px 15px;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+.select-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    border: 0.5rem solid black;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.left{
+    transform: rotate(90deg);
+}
+
+.right{
+    transform: rotate(-90deg);
+}
+
+.left:hover{
+    transform: rotate(90deg) scale(0.9);
+    /* transform: scale(0.9); */
+}
+
+.right:hover{
+    transform: rotate(-90deg) scale(0.9);
+    /* transform: scale(0.9); */
+}
