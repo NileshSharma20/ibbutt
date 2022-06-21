@@ -22,8 +22,8 @@
     /* position: absolute;
     top: 0%;
     left: 50vw; */
-    width: auto;
-    height: 55vh;
+    width: 30vw;
+    height: auto;
     transition: 0.5s ease-in-out;
 }
 
@@ -34,6 +34,7 @@
 .choice-text{
     position: fixed;
     top:8vh;
+    text-align: center;
     font-size: 4rem;
     color:  black;
 }

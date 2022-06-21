@@ -29,9 +29,15 @@
     position:absolute;
     bottom: 30vh;
     right: 30vw;
-    width: auto;
-    height: 70vh;
+    width: 40vw;
+    height: auto;
 
+}
+
+.failed-text-mobile{
+    width: 50vw;
+    bottom: 20vh;
+    right: 20vw;
 }
 
 .return-btn{
@@ -46,6 +52,18 @@
     cursor:pointer;
 }
 
+.return-btn-mobile{
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    font-size: 1.5rem;
+    background-color: blanchedalmond;
+    padding: 0.2rem 0.6rem;
+    border: 0.5rem solid black;
+    transition: 0.3s ease-in-out;
+    cursor:pointer;
+}
+
 .return-btn:hover{
     transform: scale(0.9);
 }
@@ -55,6 +73,6 @@
     position:absolute;
     bottom: 0;
     right: 0;
-    width: auto;
-    height: 80vh;
+    width: 60vw;
+    height: auto;
 }

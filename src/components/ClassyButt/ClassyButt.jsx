@@ -1,13 +1,18 @@
 import React from 'react'
 import Make from './Make'
 import Comic from './Comic'
+import { useMediaQuery } from 'react-responsive'
 import "./ClassyButt.css"
 
 function ClassyButt() {
+  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+
   return (
     <>
     <div className='cb-container'>
-      <img className='failed-text' src="images/Text 2.png" alt = "test"/>
+      <img className={`failed-text ${isPortrait?"failed-text-mobile":""}`} 
+        src="images/Text 2.png" 
+        alt = "test"/>
     
           
       <img className='classy-butt' src="images/B.t .2.png" alt = "test"/>

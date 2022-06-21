@@ -14,6 +14,7 @@ function LandingPage({iM}) {
   const lconRef = useRef()
   
   const [cheekWidth, setCheekWidth] = useState(0);
+  const [wrapperStart, setWrapperStart] = useState(0)
   const [lconWidth, setLconWidth] = useState();
   const [diff, setDiff] = useState(0)
   const [logicCounter, setLogicCounter] = useState(1)
@@ -59,7 +60,13 @@ function LandingPage({iM}) {
     setCheekWidth(offsetWidth)
     console.log(offsetHeight, offsetWidth);
     console.log(`diff: ${lconWidth/2 - cheekWidth}`)
-    setDiff(lconWidth/2 - cheekWidth - lconWidth*0.25)
+    if(isPortrait){
+      setDiff(lconWidth/2 - cheekWidth - lconWidth*0.25-50)
+    }
+    else{
+      setDiff(lconWidth/2 - cheekWidth - lconWidth*0.25)
+    }
+    
   };
 
 
@@ -183,7 +190,9 @@ function LandingPage({iM}) {
       
 
     <MobileView>
-    <div className={`landing-container  ${isPortrait?"landing-mobile":""}`} ref={lconRef}>
+      {isPortrait? 
+      <div className='landing-container-mobile-cover'>
+        <div className={`landing-container  ${isPortrait? "landing-mobile":""}`} ref={lconRef}>
         {!isAnimating && 
         <div className='text-box'>
           Pass me the Blunt bro!
@@ -194,11 +203,11 @@ function LandingPage({iM}) {
           Light it up!
         </div>}
         
-        <img className='landing-img butt-land' 
+        <img className={`landing-img butt-land ${isPortrait? "butt-land-mobile":""}`} 
           src="images/lightbutt.png" 
           alt = "lightbutt"/>
           
-          <img className='butt-half-land' 
+          <img className={`butt-half-land ${isPortrait? "butt-half-mobile":""}`} 
             ref={leftCheekRef} 
             onLoad={onImgLoad}
             src="images/lightbutt_left.png" 
@@ -207,8 +216,8 @@ function LandingPage({iM}) {
           
           <div className="fake-filler" ref={fakeFillerRef}></div>
 
-        <motion.div className="img-wrapper"
-          initial={{x:0}}
+        <motion.div className={`img-wrapper ${isPortrait?"img-wrapper-mobile":""}`}
+          initial={{x: 0}}
           animate={{
             x:isAnimating?-diff:0, 
             }}
@@ -216,22 +225,22 @@ function LandingPage({iM}) {
           onClick={()=>handleImgClick()}
           ref = {jointRef}
         >
-        <img className='joint-land' 
+        <img className={`joint-land ${isPortrait?"joint-land-mobile":""}`} 
             src="images/Only_joint(1).png" 
             alt = "joint"
             />
           
         
           {isAnimating&&smoke?
-          <div className="smoke-box">
-            <motion.img className='smoke-img' 
+          <div className={`${isPortrait?"smoke-box-mobile":"smoke-box"}`}>
+            <motion.img className={`smoke-img ${isPortrait?"smoke-img-mobile":""}`} 
               src= "images/smoke.png" 
               alt="smoke"
               initial={{opacity:0}}
               animate={{opacity:1}}
               transition={{duration:0.8}} />
             
-            <motion.img className='burnt-img' 
+            <motion.img className={`burnt-img ${isPortrait?"burnt-img-mobile":""}`} 
               src= "images/BurntPart.png" 
               alt="burnt"
               initial={{opacity:0}}
@@ -257,8 +266,84 @@ function LandingPage({iM}) {
           animate={cursorVarint}
           />}
     </div>
+      </div>: 
+    
+    <div className={`landing-container  ${isPortrait? "landing-mobile":""}`} ref={lconRef}>
+        {!isAnimating && 
+        <div className='text-box'>
+          Pass me the Blunt bro!
+        </div>}
+
+        {isAnimating && !smoke && 
+        <div className='text-box'>
+          Light it up!
+        </div>}
+        
+        <img className={`landing-img butt-land ${isPortrait? "butt-land-mobile":""}`} 
+          src="images/lightbutt.png" 
+          alt = "lightbutt"/>
+          
+          <img className={`butt-half-land ${isPortrait? "butt-half-mobile":""}`} 
+            ref={leftCheekRef} 
+            onLoad={onImgLoad}
+            src="images/lightbutt_left.png" 
+            alt = "lightbutt-half"/>
+
+          
+          <div className="fake-filler" ref={fakeFillerRef}></div>
+
+        <motion.div className={`img-wrapper ${isPortrait?"img-wrapper-mobile":""}`}
+          initial={{x: 0}}
+          animate={{
+            x:isAnimating?-diff:0, 
+            }}
+          transition={{type:"tween", duration:2}}
+          onClick={()=>handleImgClick()}
+          ref = {jointRef}
+        >
+        <img className={`joint-land ${isPortrait?"joint-land-mobile":""}`} 
+            src="images/Only_joint(1).png" 
+            alt = "joint"
+            />
+          
+        
+          {isAnimating&&smoke?
+          <div className={`${isPortrait?"smoke-box-mobile":"smoke-box"}`}>
+            <motion.img className={`smoke-img ${isPortrait?"smoke-img-mobile":""}`} 
+              src= "images/smoke.png" 
+              alt="smoke"
+              initial={{opacity:0}}
+              animate={{opacity:1}}
+              transition={{duration:0.8}} />
+            
+            <motion.img className={`burnt-img ${isPortrait?"burnt-img-mobile":""}`} 
+              src= "images/BurntPart.png" 
+              alt="burnt"
+              initial={{opacity:0}}
+              animate={{opacity:1}}
+              transition={{duration:0.8}} />
+          </div>
+            :<></>}
+
+        
+        </motion.div>
+        {isAnimating?
+        <motion.img
+          src='images/L.t.2(1).png' 
+          className='cursor'
+          variants={variants}
+          animate={cursorVarint}
+          />
+        :
+        <motion.img
+          src='images/L.t.1(1).png' 
+          className='cursor'
+          variants={variants}
+          animate={cursorVarint}
+          />}
+    </div>
+     } 
      </MobileView>
-  {/* } */}
   </>
   )
 }

@@ -10,8 +10,11 @@
     /* border: 5px solid black; */
 }
 
-.landing-mobile{
-    background-color: blue;
+.landing-container-mobile-cover{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../background-image/psy-back.png);
+    z-index: 10;
 }
 
 .text-box{
@@ -33,6 +36,12 @@
     z-index: 0;
 }
 
+.butt-land-mobile{
+    height: 50vh;
+    width: auto;
+    bottom: 0;
+}
+
 .butt-half-land{
     display: flex;
     float: left;
@@ -40,6 +49,13 @@
     width: auto;
     left: 0;
     z-index: 2;
+}
+
+.butt-half-mobile{
+    position: absolute;
+    height: 50vh;
+    width: auto;
+    bottom:0
 }
 
 .fake-space{
@@ -65,12 +81,26 @@
     z-index: 1;
     /* border: 2px solid black; */
 }
+
+.img-wrapper-mobile{
+    position: absolute;
+    bottom:15.5vh;
+    /* left:10vw; */
+    /* border: 2px solid black; */
+    /* z-index: 4; */
+}
+
 .joint-land{
-    /* position: absolute; */
     height: auto;
     width: 30vw;
     /* border: 2px solid black; */
     /* z-index: 1; */
+}
+
+.joint-land-mobile{
+    top:30vh;
+    /* position: absolute; */
+    /* top:15vh; */
 }
 .smoke-box{
     position: fixed;
@@ -80,6 +110,14 @@
     height: 75%;
     /* border: 2px solid black; */
 }
+
+.smoke-box-mobile{
+    position: fixed;
+    /* border: 2px solid red; */
+    bottom:0;
+    right:0;
+    /* z-index: 4; */
+}
 .smoke-img{
     position: fixed;
     bottom: 45%;
@@ -88,6 +126,11 @@
     height: 60vh;
     z-index: 2;
 }
+.smoke-img-mobile{
+    height: 30vh;
+    /* bottom:45%; */
+    right: -65%;
+}
 .burnt-img{
     position: fixed;
     bottom: 0;
@@ -95,6 +138,13 @@
     width: 10vw;
     height: auto;
     object-fit: contain;
+}
+
+.burnt-img-mobile{
+    width: 9vw;
+    right: -8%;
+    bottom: 4%
+
 }
 
 
