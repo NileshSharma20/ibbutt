@@ -115,12 +115,12 @@ function LandingPage({iM}) {
     <div className='landing-container' ref={lconRef}>
         {!isAnimating && 
         <div className='text-box'>
-          Pass me the Blunt bro!
+          Click to Pass me the Blunt bro!
         </div>}
 
         {isAnimating && !smoke && 
         <div className='text-box'>
-          Light it up!
+          Click again to Light it up!
         </div>}
         
         <img className='landing-img butt-land' 
@@ -194,13 +194,13 @@ function LandingPage({iM}) {
       <div className='landing-container-mobile-cover'>
         <div className={`landing-container  ${isPortrait? "landing-mobile":""}`} ref={lconRef}>
         {!isAnimating && 
-        <div className='text-box'>
-          Pass me the Blunt bro!
+        <div className='text-box text-mobile'>
+          Tap to pass me the Blunt!
         </div>}
 
         {isAnimating && !smoke && 
-        <div className='text-box'>
-          Light it up!
+        <div className='text-box text-mobile'>
+          Tap again to light it up!
         </div>}
         
         <img className={`landing-img butt-land ${isPortrait? "butt-land-mobile":""}`} 
@@ -271,12 +271,12 @@ function LandingPage({iM}) {
     <div className={`landing-container  ${isPortrait? "landing-mobile":""}`} ref={lconRef}>
         {!isAnimating && 
         <div className='text-box'>
-          Pass me the Blunt bro!
+          Tap to pass me the Blunt!
         </div>}
 
         {isAnimating && !smoke && 
         <div className='text-box'>
-          Light it up!
+          Tap again to Light it up!
         </div>}
         
         <img className={`landing-img butt-land ${isPortrait? "butt-land-mobile":""}`} 

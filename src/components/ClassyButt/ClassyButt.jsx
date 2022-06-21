@@ -1,6 +1,7 @@
 import React from 'react'
 import Make from './Make'
 import Comic from './Comic'
+import Poster from './Poster'
 import { useMediaQuery } from 'react-responsive'
 import "./ClassyButt.css"
 
@@ -17,8 +18,9 @@ function ClassyButt() {
           
       <img className='classy-butt' src="images/B.t .2.png" alt = "test"/>
     </div>
-    <Make />
     <Comic />
+    <Make />
+    <Poster />
     </>
   )
 }

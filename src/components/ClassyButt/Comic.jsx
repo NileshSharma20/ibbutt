@@ -7,10 +7,12 @@ function Comic() {
   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
   return (
     <div className='make-container'>
-        <div className={`make-heading ${isMobile?"make-heading-mobile":""}`}>
+        {/* <div className={`make-heading ${isMobile?"make-heading-mobile":""}`}>
             <h1>Comic</h1>
+        </div> */}
+        <div className={`make-generator ${isMobile?"make-generator-mobile":""}`}>
+          <img className='comic-img' src='images/Comic.png' alt="comic"/>
         </div>
-        <div className={`make-generator ${isMobile?"make-generator-mobile":""}`}></div>
     </div>
   )
 }

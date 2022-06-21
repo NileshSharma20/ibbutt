@@ -26,13 +26,17 @@ function Choice() {
         src="images/Chesticles(1).png"
         onClick={()=>setFailedFlag(true)} 
         alt = "test"/>
+
+      <img className='choice-img line' src='images/line.png'/>
       
       <img className='choice-img butt' 
         src="images/B.t(1).png" 
         onClick={()=>setPassedFlag(true)}
         alt = "test"/>
       </div>
-      <div className="choice-text">Choose wisely!</div>
+      <div className="choice-text">
+        <img  className='choose-img-text' src='images/chooseText.png' alt="text" />
+      </div>
     </div>
   )
 }

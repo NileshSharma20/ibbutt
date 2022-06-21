@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
 
-    background: url(../../background-image/rainbow-back.png) no-repeat center fixed;
+    background: url(../../background-image/psy2-back.png) no-repeat center fixed;
     background-size: cover;
     /* background-color: #FFBE0B; */
 }
@@ -22,18 +22,30 @@
     /* position: absolute;
     top: 0%;
     left: 50vw; */
-    width: 30vw;
+    width: 22vw;
     height: auto;
     transition: 0.5s ease-in-out;
+    object-fit: contain;
 }
 
+.choose-img-text{
+    height: 7vh;
+    width: auto;
+}
+
+.line{
+    position: absolute;
+    height: 50vh;
+    top:20vh;
+    width: auto;
+}
 .choice-img:hover{
     transform: scale(1.1);
 }
 
 .choice-text{
     position: fixed;
-    top:8vh;
+    top:5vh;
     text-align: center;
     font-size: 4rem;
     color:  black;
