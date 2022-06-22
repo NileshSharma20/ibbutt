@@ -50,6 +50,17 @@
     /* border: 2px solid black; */
 }
 
+.poster-container{
+    display: flex;
+    position: relative;
+    padding-top:20px ;
+    /* align-items: center; */
+    /* flex-direction: column; */
+    justify-content: center;
+    width: 70%;
+    height: 80vh;
+}
+
 .make-generator-portrait{
     display: flex;
     position: relative;
@@ -195,6 +206,40 @@
 .comic-img{
     width: 60vw;
     height: auto;
+    align-items: center;
     object-fit: contain;
+    /* border: 2px solid black; */
     /* content: ; */
+}
+
+.comic-img-portrait{
+    width: 90vw;
+}
+
+.goto-mint-btn{
+    position: relative;
+    align-self: center;
+    margin-top:1.8rem ;
+    /* top: 5vh;
+    left: 5vw; */
+    font-size: 1.5rem;
+    color: black;
+    text-shadow: 1px 1px 0 rgb(192, 181, 167),
+                 1px 2px 0 rgb(192, 181, 167),
+                 1px 3px 0 rgb(192, 181, 167),
+                 1px 4px 5px rgb(192, 181, 167) ;
+    background-color: blanchedalmond;
+    padding: 0.2rem 0.6rem;
+    border: 0.5rem solid black;
+    transition: 0.3s ease-in-out;
+    cursor:pointer;
+}
+
+.goto-mint-btn-mobile{
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+}
+
+.goto-mint-btn:hover{
+    transform: scale(0.9)
 }

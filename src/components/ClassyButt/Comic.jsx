@@ -10,8 +10,8 @@ function Comic() {
         {/* <div className={`make-heading ${isMobile?"make-heading-mobile":""}`}>
             <h1>Comic</h1>
         </div> */}
-        <div className={`make-generator ${isMobile?"make-generator-mobile":""}`}>
-          <img className='comic-img' src='images/Comic.png' alt="comic"/>
+        <div className="poster-container">
+          <img className={`comic-img ${isPortrait?"comic-img-portrait":""}`} src='images/Comic.png' alt="comic"/>
         </div>
     </div>
   )

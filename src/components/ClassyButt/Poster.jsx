@@ -1,18 +1,33 @@
-import React from 'react'
+import {useState, useEffect} from 'react'
 import {isMobile} from 'react-device-detect';
 import { useMediaQuery } from 'react-responsive'
+import { useNavigate } from 'react-router-dom'
 import './Make.css'
 
 function Poster() {
-    const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+  const navigate = useNavigate();
+
+  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+
+  const [mintFlag, setMintFlag] = useState(false)
+
+  useEffect(()=>{
+      if(mintFlag){
+        navigate('/mint')
+      }
+    },[mintFlag])
+    
   return (
     <div className='make-container'>
-        {/* <div className={`make-heading ${isMobile?"make-heading-mobile":""}`}>
-            <h1>Comic</h1>
-        </div> */}
-        <div className={`make-generator ${isMobile?"make-generator-mobile":""}`}>
-          <img className='comic-img' src='images/Poster.png' alt="comic"/>
+        <div className="poster-container"> 
+          <img className={`comic-img ${isPortrait?"comic-img-portrait":""}`} src='images/Poster.png' alt="comic"/>
+          
         </div>
+        <div className={`goto-mint-btn ${isMobile? "goto-mint-btn-mobile":""}`} 
+          onClick={()=>setMintFlag(true)}>
+            Get your ass
+        </div>
+        
     </div>
   )
 }
