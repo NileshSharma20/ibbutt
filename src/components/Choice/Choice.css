@@ -6,9 +6,17 @@
     align-items: center;
     justify-content: center;
 
-    background: url(../../background-image/psy2-back.png) no-repeat center fixed;
+    /* background: url(../../background-image/psy2-back.png) no-repeat center fixed; */
     background-size: cover;
     /* background-color: #FFBE0B; */
+}
+
+.choice-back{
+    height: 20vh;
+    width: 40vw;
+    position: absolute;
+    top: 0;
+    /* z-index: 0; */
 }
 
 .choice-box{
@@ -26,6 +34,7 @@
     height: auto;
     transition: 0.5s ease-in-out;
     object-fit: contain;
+    z-index: 1;
 }
 
 .choose-img-text{

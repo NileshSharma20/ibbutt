@@ -112,6 +112,13 @@ function LandingPage({iM}) {
   return (
     <>
    <BrowserView>
+   <video autoPlay muted loop 
+    className='vid-back'
+    alt="background">
+      <source src='images/trippy-weed.mp4' 
+    type="video/mp4" />
+    </video>
+
     <div className='landing-container' ref={lconRef}>
         {!isAnimating && 
         <div className='text-box'>
@@ -191,8 +198,18 @@ function LandingPage({iM}) {
 
     <MobileView>
       {isPortrait? 
-      <div className='landing-container-mobile-cover'>
-        <div className={`landing-container  ${isPortrait? "landing-mobile":""}`} ref={lconRef}>
+      <>
+      
+      <video autoPlay muted loop 
+            className='vid-back'
+            poster="images/psy-back.png">
+              <source src='images/trippy-weed.mp4' 
+            type="video/mp4" />
+        </video>
+      {/* <div className='landing-container-mobile-cover'> */}
+        
+        <div className="landing-container" ref={lconRef}>
+       
         {!isAnimating && 
         <div className='text-box text-mobile'>
           Tap to put it in!
@@ -266,8 +283,16 @@ function LandingPage({iM}) {
           animate={cursorVarint}
           />}
     </div>
-      </div>: 
-    
+      {/* </div> */}
+      </>
+      : 
+    <>
+      <video autoPlay muted loop 
+          className='vid-back'
+          poster="images/psy-back.png">
+            <source src='images/trippy-weed.mp4' 
+          type="video/mp4" />
+      </video>
     <div className={`landing-container  ${isPortrait? "landing-mobile":""}`} ref={lconRef}>
         {!isAnimating && 
         <div className='text-box'>
@@ -342,6 +367,7 @@ function LandingPage({iM}) {
           animate={cursorVarint}
           />}
     </div>
+    </>
      } 
      </MobileView>
   </>

@@ -20,7 +20,15 @@ function Choice() {
   },[passedFlag])
 
   return (
+    <>
+    <video autoPlay muted loop 
+          className='vid-back'
+          poster="images/psy-back.png">
+            <source src='images/trippy-weed.mp4' 
+          type="video/mp4" />
+      </video>
     <div className='choice-container'>
+      
       <div className="choice-box">
       <img className='choice-img boobs' 
         src="images/Chesticles(1).png"
@@ -35,9 +43,16 @@ function Choice() {
         alt = "test"/>
       </div>
       <div className="choice-text">
+        {/* <video autoPlay muted loop 
+            className='choice-back'
+            poster="images/images/chooseText.png">
+              <source src='images/choice.mp4' 
+            type="video/mp4" />
+        </video> */}
         <img  className='choose-img-text' src='images/chooseText.png' alt="text" />
       </div>
     </div>
+    </>
   )
 }
 
