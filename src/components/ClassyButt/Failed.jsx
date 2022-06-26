@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
 
+
 function Failed() {
   const navigate = useNavigate();
   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
@@ -15,6 +16,13 @@ function Failed() {
     }
   },[returnTrue])
   return (
+    <>
+    <video autoPlay muted loop 
+          className='vid-back'
+          poster="images/psy-back-still.png">
+            <source src='images/trippy-weed.mp4' 
+          type="video/mp4" />
+      </video>
     <div className='cb-container failed-back'>
         <img className={`failed-text ${isPortrait?"failed-text-mobile":""}`} 
           src="images/Text 1.png" alt = "test"/>
@@ -23,6 +31,7 @@ function Failed() {
       <div className={` ${isPortrait?"return-btn-mobile":"return-btn"}`} 
         onClick={()=>setReturnTrue(true)}>Try Again</div>  
     </div>
+    </>
   )
 }
 

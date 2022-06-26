@@ -16,7 +16,7 @@ function ClassyButt() {
         alt = "test"/>
     
           
-      <img className='classy-butt' src="images/B.t .2.png" alt = "test"/>
+      <img className={`classy-butt ${isPortrait ? "classy-butt-mobile":""}`} src="images/B.t .2.png" alt = "test"/>
     </div>
     <Comic />
     {/* <Make /> */}

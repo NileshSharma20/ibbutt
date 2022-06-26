@@ -8,6 +8,7 @@
     background-color: #faa275;
     position: relative;
     background: url(../../background-image/rad.png) fixed center no-repeat;
+    background-size: cover;
     
 }
 
@@ -204,16 +205,31 @@
 }
 
 .comic-img{
-    width: 60vw;
+    width: 40vw;
     height: auto;
+    margin: 5vh 0;
     align-items: center;
     object-fit: contain;
+    padding: 2rem 0;
+    background-color: white;
+    border: 0.3rem solid black;
+    border-radius: 0.8rem;
+    /* transform: rotate(2deg); */
     /* border: 2px solid black; */
     /* content: ; */
 }
 
 .comic-img-portrait{
-    width: 90vw;
+    width: 70vw;
+    min-height:10vh;
+    border: 0.2rem solid black;
+    /* transform: rotate(2deg); */
+}
+
+.poster-img{
+    transform: rotate(0deg);
+    background-color: transparent;
+    border: none;
 }
 
 .goto-mint-btn{

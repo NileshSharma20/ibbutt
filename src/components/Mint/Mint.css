@@ -54,6 +54,7 @@
 .social-grid{
     position: relative;
     bottom: 0;
+    width: 50vw;
     height: 20vh;
     display: grid;
     grid-template-columns: auto auto auto;

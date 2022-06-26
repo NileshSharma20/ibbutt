@@ -122,12 +122,14 @@ function LandingPage({iM}) {
     <div className='landing-container' ref={lconRef}>
         {!isAnimating && 
         <div className='text-box'>
-          Click to put it in!
+          {/* Click to put it in! */}
+          <img className='text-box-img' src='images/put-it-in.gif' alt='Put it in'/>
         </div>}
 
         {isAnimating && !smoke && 
         <div className='text-box'>
-          Click again to Light it up, bitch!
+          {/* Click again to Light it up, bitch! */}
+          <img className='text-box-img' src='images/light-it-up.gif' alt='Light it up, bitches'/>
         </div>}
         
         <img className='landing-img butt-land' 
@@ -212,12 +214,14 @@ function LandingPage({iM}) {
        
         {!isAnimating && 
         <div className='text-box text-mobile'>
-          Tap to put it in!
+          {/* Tap to put it in! */}
+          <img className='text-box-img-mobile' src='images/put-it-in.gif' alt='Put it in'/>
         </div>}
 
         {isAnimating && !smoke && 
         <div className='text-box text-mobile'>
-          Tap again to light it up, bitch!
+          {/* Tap again to light it up, bitch! */}
+          <img className='text-box-img-mobile' src='images/light-it-up.gif' alt='Light it up, bitches'/>
         </div>}
         
         <img className={`landing-img butt-land ${isPortrait? "butt-land-mobile":""}`} 
@@ -296,12 +300,14 @@ function LandingPage({iM}) {
     <div className={`landing-container  ${isPortrait? "landing-mobile":""}`} ref={lconRef}>
         {!isAnimating && 
         <div className='text-box'>
-          Tap to put it in!
+          {/* Tap to put it in! */}
+          <img className='text-box-img' src='images/put-it-in.gif' alt='Put it in'/>
         </div>}
 
         {isAnimating && !smoke && 
         <div className='text-box'>
-          Tap again to Light it up, bitch!
+          {/* Tap again to Light it up, bitch! */}
+          <img className='text-box-img' src='images/light-it-up.gif' alt='Light it up, bitches!'/>
         </div>}
         
         <img className={`landing-img butt-land ${isPortrait? "butt-land-mobile":""}`} 

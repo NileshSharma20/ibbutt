@@ -37,8 +37,19 @@
     top:5vh;
     left:40vw;
 }
+
+.text-box-img{
+    width: 40vw;
+    height: auto;
+}
+
+.text-box-img-mobile{
+    width: 90vw;
+    height: auto;
+}
+
 .text-mobile{
-    top:10vh;
+    top:20vh;
     left:10vw;
     color: white;
     text-shadow: 1px 1px 0 antiquewhite,

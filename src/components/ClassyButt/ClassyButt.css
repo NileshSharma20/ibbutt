@@ -7,7 +7,7 @@
     justify-content: center;
 
     background: url(../../background-image/rad.png) fixed center no-repeat;
-
+    background-size: cover;
     /* background-color: #90be6d; */
     font-size: 5rem;
     color: white;
@@ -16,7 +16,7 @@
 
 .failed-back{
     background-color: none;
-    background: url(../../background-image/galaxy-back.png);
+    /* background: url(../../background-image/galaxy-back.png); */
 }
 
 .fake{
@@ -36,8 +36,8 @@
 }
 
 .failed-text-mobile{
-    width: 50vw;
-    bottom: 20vh;
+    width: 60vw;
+    bottom: 30vh;
     right: 20vw;
 }
 
@@ -84,4 +84,9 @@
     right: 0;
     width: 60vw;
     height: auto;
+}
+
+.classy-butt-mobile{
+    width: 100vw;
+    /* height: 40vh; */
 }
