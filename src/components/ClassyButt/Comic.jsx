@@ -12,6 +12,10 @@ function Comic() {
         </div> */}
         <div className="poster-container">
           <img className={`comic-img ${isPortrait?"comic-img-portrait":""}`} src='images/Comic.png' alt="comic"/>
+          
+        </div>
+        <div className="poster-container">
+          <img className={`comic-img ${isPortrait?"comic-img-portrait":""}`} src='images/nft-show.gif' alt="comic"/>
         </div>
     </div>
   )
