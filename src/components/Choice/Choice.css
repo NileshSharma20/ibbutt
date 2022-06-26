@@ -30,6 +30,7 @@
     /* position: absolute;
     top: 0%;
     left: 50vw; */
+    min-width: 130px;
     width: 22vw;
     height: auto;
     transition: 0.5s ease-in-out;
@@ -38,8 +39,11 @@
 }
 
 .choose-img-text{
-    height: 7vh;
-    width: auto;
+    height: auto;
+    min-width: 350px;
+    width: 30vw;
+    /* box-shadow: inset ; */
+    /* border: 2px solid black; */
 }
 
 .line{

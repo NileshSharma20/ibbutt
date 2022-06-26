@@ -23,7 +23,7 @@ function Choice() {
     <>
     <video autoPlay muted loop 
           className='vid-back'
-          poster="images/psy-back.png">
+          poster="images/psy-back-still.png">
             <source src='images/trippy-weed.mp4' 
           type="video/mp4" />
       </video>
@@ -49,7 +49,7 @@ function Choice() {
               <source src='images/choice.mp4' 
             type="video/mp4" />
         </video> */}
-        <img  className='choose-img-text' src='images/chooseText.png' alt="text" />
+        <img  className='choose-img-text' src='images/choose.gif' alt="text" />
       </div>
     </div>
     </>

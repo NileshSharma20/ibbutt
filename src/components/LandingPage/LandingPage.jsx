@@ -202,7 +202,7 @@ function LandingPage({iM}) {
       
       <video autoPlay muted loop 
             className='vid-back'
-            poster="images/psy-back.png">
+            poster="images/psy-back-still.png">
               <source src='images/trippy-weed.mp4' 
             type="video/mp4" />
         </video>
@@ -289,7 +289,7 @@ function LandingPage({iM}) {
     <>
       <video autoPlay muted loop 
           className='vid-back'
-          poster="images/psy-back.png">
+          poster="images/psy-back-still.png">
             <source src='images/trippy-weed.mp4' 
           type="video/mp4" />
       </video>
