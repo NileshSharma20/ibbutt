@@ -115,7 +115,7 @@ function LandingPage({iM}) {
    <video autoPlay muted loop 
     className='vid-back'
     alt="background">
-      <source src='images/trippy-weed.mp4' 
+      <source src='images/psy-light-back.mp4' 
     type="video/mp4" />
     </video>
 
@@ -205,7 +205,7 @@ function LandingPage({iM}) {
       <video autoPlay muted loop 
             className='vid-back'
             poster="images/psy-back-still.png">
-              <source src='images/trippy-weed.mp4' 
+              <source src='images/psy-light-back.mp4' 
             type="video/mp4" />
         </video>
       {/* <div className='landing-container-mobile-cover'> */}
@@ -294,7 +294,7 @@ function LandingPage({iM}) {
       <video autoPlay muted loop 
           className='vid-back'
           poster="images/psy-back-still.png">
-            <source src='images/trippy-weed.mp4' 
+            <source src='images/psy-light-back.mp4' 
           type="video/mp4" />
       </video>
     <div className={`landing-container  ${isPortrait? "landing-mobile":""}`} ref={lconRef}>

@@ -24,7 +24,7 @@ function Choice() {
     <video autoPlay muted loop 
           className='vid-back'
           poster="images/psy-back-still.png">
-            <source src='images/trippy-weed.mp4' 
+            <source src='images/psy-light-back.mp4' 
           type="video/mp4" />
       </video>
     <div className='choice-container'>

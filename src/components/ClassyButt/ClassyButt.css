@@ -7,7 +7,7 @@
     justify-content: center;
 
     background: url(../../background-image/rad.png) fixed center no-repeat;
-    background-size: contain;
+    background-size: cover;
     /* background-color: #90be6d; */
     font-size: 5rem;
     color: white;
@@ -28,10 +28,14 @@
 
 .failed-text{
     position:absolute;
+    padding: 1rem;
     bottom: 30vh;
     right: 30vw;
     width: 40vw;
     height: auto;
+    background-color: white;
+    border: 0.3rem solid black;
+    border-radius: 0.8rem;
 
 }
 
@@ -41,15 +45,26 @@
     right: 20vw;
 }
 
+.try-again{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
 .return-btn{
     position: fixed;
+    width: 10vw;
+    min-height: 1vh;
     bottom: 5vh;
     left: 5vw;
-    font-size: 3rem;
-    text-shadow: 1px 1px 0 rgb(192, 181, 167),
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 0.4rem;
+    background-color: antiquewhite;
+    /* text-shadow: 1px 1px 0 rgb(192, 181, 167),
                  1px 2px 0 rgb(192, 181, 167),
                  1px 3px 0 rgb(192, 181, 167),
-                 1px 4px 5px rgb(192, 181, 167) ;
+                 1px 4px 5px rgb(192, 181, 167) ; */
     /* background-color: blanchedalmond; */
     padding: 0.2rem 0.6rem;
     /* border: 1rem solid black; */
@@ -59,9 +74,14 @@
 
 .return-btn-mobile{
     position: fixed;
+    width: 40vw;
+    min-height: 1vh;
+    border: 2px solid black;
+    border-radius: 0.4rem;
+    background-color: antiquewhite;
     top: 5vh;
     left: 5vw;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-shadow: 1px 1px 0 rgb(192, 181, 167),
                  1px 2px 0 rgb(192, 181, 167),
                  1px 3px 0 rgb(192, 181, 167),

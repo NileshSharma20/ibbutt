@@ -12,7 +12,7 @@ function ClassyButt() {
     <>
     <div className='cb-container'>
       <img className={`failed-text ${isPortrait?"failed-text-mobile":""}`} 
-        src="images/Text 2.png" 
+        src="images/splendour.gif" 
         alt = "test"/>
     
           

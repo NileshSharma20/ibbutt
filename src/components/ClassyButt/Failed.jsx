@@ -20,16 +20,19 @@ function Failed() {
     <video autoPlay muted loop 
           className='vid-back'
           poster="images/psy-back-still.png">
-            <source src='images/trippy-weed.mp4' 
+            <source src='images/psy-light-back.mp4' 
           type="video/mp4" />
       </video>
     <div className='cb-container failed-back'>
         <img className={`failed-text ${isPortrait?"failed-text-mobile":""}`} 
-          src="images/Text 1.png" alt = "test"/>
+          src="images/swine.gif" alt = "test"/>
     
-        <img className='classy-butt' src="images/B.t .2.png" alt = "test"/>
+      <img className={`classy-butt ${isPortrait ? "classy-butt-mobile":""}`} src="images/B.t .2.png" alt = "test"/>
+    
       <div className={` ${isPortrait?"return-btn-mobile":"return-btn"}`} 
-        onClick={()=>setReturnTrue(true)}>Try Again</div>  
+        onClick={()=>setReturnTrue(true)}>
+        <img className='try-again' src='images/tryagain.gif' alt='try again' />    
+      </div>  
     </div>
     </>
   )
