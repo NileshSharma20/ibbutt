@@ -10,12 +10,14 @@ function Comic() {
         {/* <div className={`make-heading ${isMobile?"make-heading-mobile":""}`}>
             <h1>Comic</h1>
         </div> */}
-        <div className="poster-container">
-          <img className={`comic-img ${isPortrait?"comic-img-portrait":""}`} src='images/Comic.png' alt="comic"/>
-          
-        </div>
-        <div className="poster-container">
-          <img className={`comic-img ${isPortrait?"comic-img-portrait":""}`} src='images/nft-show.gif' alt="comic"/>
+        <div className="grid-layout">
+          <div className="poster-container">
+            <img className={`comic-img ${isPortrait?"comic-img-portrait":""}`} src='images/Comic.png' alt="comic"/>
+            
+          </div>
+          <div className="poster-container">
+            <img className={`comic-img ${isPortrait?"comic-img-portrait":""}`} src='images/nft-show.gif' alt="comic"/>
+          </div>
         </div>
     </div>
   )

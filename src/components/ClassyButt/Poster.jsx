@@ -19,14 +19,24 @@ function Poster() {
     
   return (
     <div className='make-container'>
-        <div className="poster-container"> 
-          <img className={`comic-img poster-img ${isPortrait?"comic-img-portrait":""}`} src='images/Poster.png' alt="comic"/>
+        <div className="grid-layout">
+          <div className="poster-container">
+            <img className={`comic-img ${isPortrait?"comic-img-portrait":""}`} src='images/nft-show.gif' alt="comic"/>
+          </div>
+          <div className="poster-container poster-info"> 
+            
+            <img className={`comic-img poster-img ${isPortrait?"comic-img-portrait":""}`} 
+              src='images/Poster.png' 
+              alt="comic"/>
+            
+            <div className={`goto-mint-btn ${isMobile? "goto-mint-btn-mobile":""}`} 
+              onClick={()=>setMintFlag(true)}>
+                Get your ass
+            </div>
+          </div>
           
         </div>
-        <div className={`goto-mint-btn ${isMobile? "goto-mint-btn-mobile":""}`} 
-          onClick={()=>setMintFlag(true)}>
-            Get your ass
-        </div>
+
         <div className="social-grid">
           <img className={`mint-img ${isPortrait ?"mint-img-mobile":""}`} 
             src ="images/Discord_j.png" 

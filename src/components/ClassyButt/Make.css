@@ -1,15 +1,44 @@
 .make-container{
     width: 100%;
     min-height: 100vh;
+    
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     background-color: #faa275;
-    position: relative;
+    
     background: url(../../background-image/rad.png) fixed center no-repeat;
     background-size: cover;
     
+}
+
+.grid-layout{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    /* column-gap: 5vw; */
+    
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    
+    /* border: 5px solid white; */
+}
+
+.art-video{
+    /* margin: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: antiquewhite;
+    
+    width: 30vw;
 }
 
 .make-heading{
@@ -58,8 +87,14 @@
     /* align-items: center; */
     /* flex-direction: column; */
     justify-content: center;
-    width: 70%;
+    /* width: 70%; */
     height: 80vh;
+    /* border: 2px solid red; */
+}
+
+.poster-info{
+    flex-direction: column;
+    padding: 0 0 0 8vw;
 }
 
 .make-generator-portrait{
@@ -228,6 +263,7 @@
 }
 
 .poster-img{
+    width: 30vw;
     transform: rotate(0deg);
     background-color: transparent;
     border: none;
