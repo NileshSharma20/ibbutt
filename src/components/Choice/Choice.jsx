@@ -1,11 +1,19 @@
-import {useState, useEffect} from 'react'
+import {useState, useEffect, useRef} from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useMediaQuery } from 'react-responsive'
+import { BsPlay, BsPause } from 'react-icons/bs'
 import "./Choice.css"
+// import ReactHowler from 'react-howler'
 
 function Choice() {
   const navigate = useNavigate();
   const [failedFlag, setFailedFlag] = useState(false)
   const [passedFlag, setPassedFlag] = useState(false)
+  const [isPlaying, setIsPlaying] = useState(false)
+
+  const audioRef = useRef();
+
+  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
 
   useEffect(()=>{
     if(failedFlag){
@@ -19,6 +27,16 @@ function Choice() {
     }
   },[passedFlag])
 
+  useEffect(()=>{
+    if(isPlaying){
+      audioRef.current.play()
+    }
+    else{
+      audioRef.current.pause()
+    }
+    console.log(`${isPlaying}`)
+  },[isPlaying])
+
   return (
     <>
     <video autoPlay muted loop 
@@ -27,6 +45,7 @@ function Choice() {
             <source src='images/psy-light-back.mp4' 
           type="video/mp4" />
       </video>
+    
     <div className='choice-container'>
       
       <div className="choice-box">
@@ -43,15 +62,18 @@ function Choice() {
         alt = "test"/>
       </div>
       <div className="choice-text">
-        {/* <video autoPlay muted loop 
-            className='choice-back'
-            poster="images/images/chooseText.png">
-              <source src='images/choice.mp4' 
-            type="video/mp4" />
-        </video> */}
         <img  className='choose-img-text' src='images/choose.gif' alt="text" />
       </div>
     </div>
+
+    <audio 
+      src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" 
+      ref={audioRef} />
+
+    {/* <div className={` ${isPortrait?"return-btn-mobile":"return-btn"}`} 
+        onClick={()=>setIsPlaying(!isPlaying)}>
+          {isPlaying? <BsPause />:<BsPlay />}
+    </div> */}
     </>
   )
 }

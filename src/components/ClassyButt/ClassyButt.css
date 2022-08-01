@@ -29,9 +29,9 @@
 .failed-text{
     position:absolute;
     padding: 1rem;
-    bottom: 30vh;
-    right: 30vw;
-    width: 40vw;
+    bottom: 60vh;
+    right: 20vw;
+    width: 30vw;
     height: auto;
     background-color: white;
     border: 0.3rem solid black;

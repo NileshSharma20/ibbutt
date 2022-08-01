@@ -10,14 +10,14 @@ function ClassyButt() {
 
   return (
     <>
-    <div className='cb-container'>
+    {/* <div className='cb-container'>
       <img className={`failed-text ${isPortrait?"failed-text-mobile":""}`} 
         src="images/splendour.gif" 
         alt = "test"/>
     
           
       <img className={`classy-butt ${isPortrait ? "classy-butt-mobile":""}`} src="images/B.t .2.png" alt = "test"/>
-    </div>
+    </div> */}
     <Comic />
     {/* <Make /> */}
     <Poster />
