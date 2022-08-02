@@ -27,15 +27,15 @@ function Choice() {
     }
   },[passedFlag])
 
-  useEffect(()=>{
-    if(isPlaying){
-      audioRef.current.play()
-    }
-    else{
-      audioRef.current.pause()
-    }
-    console.log(`${isPlaying}`)
-  },[isPlaying])
+  // useEffect(()=>{
+  //   if(isPlaying){
+  //     audioRef.current.play()
+  //   }
+  //   else{
+  //     audioRef.current.pause()
+  //   }
+  //   console.log(`${isPlaying}`)
+  // },[isPlaying])
 
   return (
     <>

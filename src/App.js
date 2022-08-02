@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
-import { BsPlay, BsPause } from 'react-icons/bs'
 import './App.css';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import { BrowserView, MobileView, isMobile  } from 'react-device-detect';
 import { useMediaQuery } from 'react-responsive'
+import Player from './components/Player';
 import LandingPage from './components/LandingPage/LandingPage';
 import Choice from './components/Choice/Choice';
 import ClassyButt from './components/ClassyButt/ClassyButt';
@@ -12,34 +12,14 @@ import Mint from './components/Mint/Mint';
 
 
 function App() {
-  // const [isMuted, setIsMuted] = useState(false)
-
-  // const audioRef = useRef();
-
-  // useEffect(()=>{
-  //   if(isMuted){
-  //     audioRef.current.muted(false)
-  //   }
-  //   else{
-  //     audioRef.current.muted(true)
-  //   }
-  //   console.log(`${isMuted}`)
-  // },[isMuted])
-
+  const url = "https://soundcloud.com/dejasolis/breathofhope?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+  const yturl = "music/sample.mp3"
   return (
     <>
     <Router>
       <div className="container">
-      {/* <audio 
-        autoPlay
-        muted={isMuted}
-        src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" 
-        ref={audioRef} />
 
-      <div className="btn" 
-          onClick={()=>setIsMuted(!isMuted)}>
-            {isMuted? "Unmute":"Mute"}
-      </div> */}
+      {/* <Player url={url} /> */}
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/choice' element={<Choice />} />
