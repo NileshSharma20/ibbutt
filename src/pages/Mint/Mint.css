@@ -1,0 +1,86 @@
+.mint-container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: 100%; */
+    grid-template-rows: 80vh 20vh;
+    justify-content: center;
+    align-items: center;
+    background: url(../../background-image/weed-back.png) fixed center no-repeat;
+    /* border: 2px solid black; */
+}
+
+.mint-content{
+    display: grid;
+    /* grid-template-columns: 100%; */
+    grid-template-rows: 70vh 10vh;
+    justify-content:center;
+    align-content: center;
+    height: auto;
+    /* border: 2px solid red; */
+}
+
+.mint-info{
+    display: flex;
+    width: 50vw;
+    background-color: antiquewhite;
+    border: 0.5rem solid black;
+    /* padding: 2rem; */
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.mint-btn{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    /* margin-bottom: 2rem; */
+    min-width: 150px;
+    min-height: 45px;
+    width: 10vw;
+    height: 8vh;
+    background-color: #a4c3b2;
+    /* color: antiquewhite; */
+    font-size: 2rem;
+    border: 0.5rem solid black;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.mint-btn:hover{
+    transform: scale(0.9);
+}
+
+.social-grid{
+    position: relative;
+    bottom: 0;
+    width: 50vw;
+    height: 20vh;
+    display: grid;
+    /* box-shadow: inset 5px 5px 35px #000; */
+    /* 3px 3px 5px 0 #ccc; */
+    grid-template-columns: auto auto auto;
+    gap:5rem;
+    justify-content: center;
+    align-items:center;
+    /* border: 2px solid black; */
+}
+
+.mint-img{
+    width: clamp(100px,10vw,10vw);
+    /* width: 10vw; */
+    /* box-shadow:inset 1px 1px 35px #000; */
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.mint-img-mobile{
+    width: clamp(65px,10vw,10vw);
+}
+
+.social-grid>img:hover{
+    transform: rotate(8deg);
+}

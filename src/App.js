@@ -1,25 +1,22 @@
-import { useState, useEffect, useRef } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import { BrowserView, MobileView, isMobile  } from 'react-device-detect';
-import { useMediaQuery } from 'react-responsive'
 import Player from './components/Player';
-import LandingPage from './components/LandingPage/LandingPage';
-import Choice from './components/Choice/Choice';
-import ClassyButt from './components/ClassyButt/ClassyButt';
-import Failed from './components/ClassyButt/Failed';
-import Mint from './components/Mint/Mint';
+import LandingPage from './pages/LandingPage/LandingPage';
+import Choice from './pages/Choice/Choice';
+import ClassyButt from './pages/ClassyButt/ClassyButt';
+import Failed from './pages/ClassyButt/Failed';
+import Mint from './pages/Mint/Mint';
 
 
 function App() {
-  const url = "https://soundcloud.com/dejasolis/breathofhope?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-  const yturl = "music/sample.mp3"
+  const music_url = "music/web_music.mp3"
+  
   return (
     <>
     <Router>
       <div className="container">
 
-      {/* <Player url={url} /> */}
+      <Player url={music_url} />
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/choice' element={<Choice />} />
