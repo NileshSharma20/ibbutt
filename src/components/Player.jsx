@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { FaPlay, FaPause } from 'react-icons/fa'
 
-const useAudio = url => {
+
+const useAudio = ({url,playFlag}) => {
     const [audio] = useState(new Audio(url))
     const [playing, setPlaying] = useState(false)
 
@@ -9,24 +10,36 @@ const useAudio = url => {
         setPlaying(!playing)
     }
 
+    const autoPlayMusic=() =>{
+        setPlaying(true)
+        audio.play()
+    }
+
+    useEffect(()=>{
+        if(playFlag){
+            setPlaying(true)
+            audio.play()
+            // console.log(`player music flag: ${playFlag}`)
+        }
+    },[playFlag])
+
     useEffect(()=>{
         playing? audio.play() : audio.pause();
     },[playing])
 
     useEffect(()=>{
-        audio.addEventListener('ended', ()=> setPlaying(false))
+        audio.addEventListener('ended', ()=> autoPlayMusic())
 
         return ()=>{
-            audio.removeEventListener('ended', ()=> setPlaying(false))
-            // toggle()
+            audio.removeEventListener('ended', ()=> autoPlayMusic())
         }
     },[])
 
     return [playing, toggle]
 }
 
-const Player=({url})=> {
-    const [playing, toggle] = useAudio(url)
+const Player=({url, playFlag})=> {
+    const [playing, toggle] = useAudio({url,playFlag})
 
   return (
     <div>

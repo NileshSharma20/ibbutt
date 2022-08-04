@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import { BrowserView, MobileView, isMobile  } from 'react-device-detect';
 import { useMediaQuery } from 'react-responsive'
 
-function LandingPage({iM}) {
+function LandingPage() {
   const navigate = useNavigate();
 
   const leftCheekRef = useRef()
@@ -14,7 +14,7 @@ function LandingPage({iM}) {
   const lconRef = useRef()
   
   const [cheekWidth, setCheekWidth] = useState(0);
-  const [wrapperStart, setWrapperStart] = useState(0)
+  // const [wrapperStart, setWrapperStart] = useState(0)
   const [lconWidth, setLconWidth] = useState();
   const [diff, setDiff] = useState(0)
   const [logicCounter, setLogicCounter] = useState(1)
@@ -39,7 +39,7 @@ function LandingPage({iM}) {
 
   const getLconWidth = () => {
     const lw = lconRef.current.offsetWidth
-    console.log(`lw: ${lw}`)
+    // console.log(`lw: ${lw}`)
     
     setLconWidth(lw)
   }
@@ -82,7 +82,7 @@ function LandingPage({iM}) {
 
 
   useEffect(()=>{
-    console.log(`cheek width: ${leftCheekRef.current.offsetWidth}`)
+    // console.log(`cheek width: ${leftCheekRef.current.offsetWidth}`)
     setCheekWidth(leftCheekRef.current.offsetWidth)
   },[cheekWidth])
 
