@@ -11,12 +11,13 @@ function Nsfw({passMusicFlag}) {
     }
 
   return (
-    <div className='nsfw-container'>
-        <div className="enter-btn"
-            onClick={()=>handleClick()} >
-            Enter at your own risk
-        </div>
-    </div>
+    <>
+    <div className='nsfw-container'></div>
+     
+            <img className='jointImg' src="images/Joint .png" alt="Joint"
+            onClick={()=>handleClick()} />
+       {/* <img className="nsfw-img" src='images/rad.png' alt='' /> */}
+    </>
   )
 }
 
