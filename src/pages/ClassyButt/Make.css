@@ -26,7 +26,7 @@
     /* column-gap: 2vw; */
     
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     padding: 0;
     
@@ -76,10 +76,14 @@
 
 .poster-container{
     display: flex;
+    /* position: absolute; */
     position: relative;
+    left: 0;
     /* width: 49vw; */
     padding-top:20px ;
     justify-content: center;
+    /* align-items: center; */
+    /* flex-direction: column; */
     padding: 0 0 0 0;
     height: 100vh;
     /* border: 2px solid red; */
@@ -89,6 +93,7 @@
     flex-direction: column;
     width: 100%;
     padding: 0 0 0 0 ;
+    margin-left: 5vw;
     align-items: center;
     grid-column: 1 / span 2;
     /* border: 5px solid blue; */
@@ -255,18 +260,19 @@
     transform: rotate(0deg);
     background-color: transparent;
     /* border: 2px solid red; */
-    margin: 15vh 0 0 0;
+    margin: 0;
 }
 
 .goto-mint-btn{
     position: relative;
     /* left:26%; */
-    min-width: 150px;
+    min-width: 100px;
     width: 10vw;
     align-self: center;
     justify-self: center;
     /* margin-bottom:10rem ; */
-    font-size: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
     color: black;
     text-shadow: 1px 1px 0 rgb(192, 181, 167),
                  1px 2px 0 rgb(192, 181, 167),
