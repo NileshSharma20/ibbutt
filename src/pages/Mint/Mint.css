@@ -79,9 +79,16 @@
 }
 
 .mint-img-mobile{
-    width: clamp(65px,10vw,10vw);
+    width: clamp(100px,10vw,10vw);
+    /* user-select: none; */
 }
 
 .social-grid>img:hover{
     transform: rotate(8deg);
+}
+
+@media only screen and (max-width: 850px) {
+    .social-grid{
+        gap: 3vw;
+    }
 }

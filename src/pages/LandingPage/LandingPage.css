@@ -72,6 +72,9 @@
     height: 50vh;
     width: auto;
     bottom: 0;
+
+    filter: drop-shadow(0 -12mm 4mm rgb(255, 0, 234));
+    /* filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210)); */
 }
 
 .butt-half-land{
@@ -152,6 +155,7 @@
 .smoke-img-mobile{
     height: 30vh;
     right: -65%;
+    filter: drop-shadow(0 -12mm 4mm rgb(255,255,255));
 }
 
 .burnt-img{

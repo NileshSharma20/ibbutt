@@ -257,7 +257,7 @@ function LandingPage() {
               transition={{duration:0.8}} />
             
             <motion.img className={`burnt-img ${isPortrait?"burnt-img-mobile":""}`} 
-              src= "images/BurntPart.png" 
+              src= "https://ik.imagekit.io/qljqw3tvn/ibb/burnt-part.png" 
               alt="burnt"
               initial={{opacity:0}}
               animate={{opacity:1}}
@@ -340,7 +340,7 @@ function LandingPage() {
               transition={{duration:0.8}} />
             
             <motion.img className={`burnt-img ${isPortrait?"burnt-img-mobile":""}`} 
-              src= "images/BurntPart.png" 
+              src= "https://ik.imagekit.io/qljqw3tvn/ibb/burnt-part.png" 
               alt="burnt"
               initial={{opacity:0}}
               animate={{opacity:1}}
