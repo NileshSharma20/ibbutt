@@ -32,6 +32,8 @@
     position: fixed;
     top:5vh;
     left:40vw;
+
+    /* border: 2px solid red; */
 }
 
 .text-box-img{

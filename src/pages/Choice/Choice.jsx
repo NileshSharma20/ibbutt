@@ -53,11 +53,11 @@ function Choice() {
       </div>
       <div className="choice-text">
         <img  className='choose-img-text' 
-          srcset="https://ik.imagekit.io/qljqw3tvn/tr:w-600/ibb/choice.gif 400w,
-          https://ik.imagekit.io/qljqw3tvn/tr:w-800/ibb/choice.gif 600w,
-          https://ik.imagekit.io/qljqw3tvn/tr:w-900/ibb/choice.gif 800w,"
+          srcset="https://ik.imagekit.io/qljqw3tvn/tr:w-500/ibb/choose-wisely.gif 400w,
+          https://ik.imagekit.io/qljqw3tvn/tr:w-700/ibb/choose-wisely.gif 600w,
+          https://ik.imagekit.io/qljqw3tvn/tr:w-1000/ibb/choose-wisely.gif 800w,"
           sizes='400px, 600px, 800px'
-          src='https://ik.imagekit.io/qljqw3tvn/tr:w-800/ibb/choice.gif' alt="text" />
+          src='https://ik.imagekit.io/qljqw3tvn/tr:w-700/ibb/choose-wisely.gif' alt="text" />
       </div>
     </div>
 

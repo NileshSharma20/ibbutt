@@ -25,14 +25,14 @@ function Failed() {
       </video>
     <div className='cb-container failed-back'>
         <img className={`failed-text-swine ${isPortrait?"failed-text-mobile":""}`} 
-          src="https://ik.imagekit.io/qljqw3tvn/ibb/swine.gif" alt = "test"/>
+          src="https://ik.imagekit.io/qljqw3tvn/ibb/swine-small.gif" alt = "test"/>
     
       <img className={`classy-butt ${isPortrait ? "classy-butt-mobile":""}`} 
         src="https://ik.imagekit.io/qljqw3tvn/ibb/MrButt_418OwtD8k.png" alt = "test"/>
     
       <div className={` ${isPortrait?"return-btn-mobile":"return-btn"}`} 
         onClick={()=>setReturnTrue(true)}>
-        <img className='try-again' src='https://ik.imagekit.io/qljqw3tvn/ibb/tryAgain.gif' alt='try again' />    
+        <img className='try-again' src='https://ik.imagekit.io/qljqw3tvn/ibb/try-Again.gif' alt='try again' />    
       </div>  
     </div>
     </>

@@ -58,10 +58,11 @@
 
 .choice-text{
     position: fixed;
-    top:5vh;
+    top: 0;
     text-align: center;
     font-size: 4rem;
     color:  black;
+    /* border: 2px solid red; */
 }
 
 
@@ -73,4 +74,10 @@
     background-color: antiquewhite;
     border: 2px solid red;  
     cursor: pointer;  
+}
+
+@media only screen and (max-width: 850px) {
+    .choice-text{
+        top:10vh;
+    }
 }

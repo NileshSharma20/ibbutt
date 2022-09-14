@@ -51,9 +51,15 @@
 }
 
 .failed-text-mobile{
-    width: 60vw;
+    width: 90vw;
     bottom: 30vh;
     right: 20vw;
+}
+
+.failed-text-mobile-success{
+    width: 90vw;
+    bottom: 25vh;
+    right: 10vw;
 }
 
 .try-again{
@@ -66,8 +72,8 @@
     position: fixed;
     width: 10vw;
     min-height: 1vh;
-    bottom: 5vh;
-    left: 5vw;
+    bottom: 1vh;
+    left: 2vw;
     font-size: 1rem;
     /* border: 2px solid black;
     border-radius: 0.4rem;
@@ -81,11 +87,10 @@
     position: fixed;
     width: 40vw;
     min-height: 1vh;
-    /* border: 2px solid black;
-    border-radius: 0.4rem;
-    background-color: antiquewhite; */
-    top: 5vh;
-    left: 5vw;
+    /* border: 2px solid black; */
+   
+    top: 2vh;
+    left: 2vw;
     font-size: 1rem;
     text-shadow: 1px 1px 0 rgb(192, 181, 167),
                  1px 2px 0 rgb(192, 181, 167),

@@ -33,8 +33,8 @@ function ClassyButt() {
             </div>
           </div>
         
-        <img className={`failed-text ${isPortrait?"failed-text-mobile":""}`} 
-            src="https://ik.imagekit.io/qljqw3tvn/ibb/splendor_tXNVj2E5C3.gif" 
+        <img className={`failed-text ${isPortrait?"failed-text-mobile-success":""}`} 
+            src="https://ik.imagekit.io/qljqw3tvn/ibb/splendor-small.gif" 
             alt = "test"/>
           
                 

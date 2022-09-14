@@ -122,7 +122,7 @@ function LandingPage() {
     <div className='landing-container' ref={lconRef}>
         {!isAnimating && 
         <div className='text-box'>
-          <img className='text-box-img' src='images/put-it-in.gif' alt='Put it in'/>
+          <img className='text-box-img' src='https://ik.imagekit.io/qljqw3tvn/ibb/putItin_DDyK31msvZ.gif' alt='Put it in'/>
         </div>}
 
         {isAnimating && !smoke && 
@@ -211,7 +211,7 @@ function LandingPage() {
        
         {!isAnimating && 
         <div className='text-box text-mobile'>
-          <img className='text-box-img-mobile' src='images/put-it-in.gif' alt='Put it in'/>
+          <img className='text-box-img-mobile' src='https://ik.imagekit.io/qljqw3tvn/ibb/putItin_DDyK31msvZ.gif' alt='Put it in'/>
         </div>}
 
         {isAnimating && !smoke && 
@@ -294,7 +294,7 @@ function LandingPage() {
     <div className={`landing-container  ${isPortrait? "landing-mobile":""}`} ref={lconRef}>
         {!isAnimating && 
         <div className='text-box'>
-          <img className='text-box-img' src='images/put-it-in.gif' alt='Put it in'/>
+          <img className='text-box-img' src='https://ik.imagekit.io/qljqw3tvn/ibb/putItin_DDyK31msvZ.gif' alt='Put it in'/>
         </div>}
 
         {isAnimating && !smoke && 
