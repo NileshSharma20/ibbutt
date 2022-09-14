@@ -131,13 +131,13 @@ function LandingPage() {
         </div>}
         
         <img className='landing-img butt-land' 
-          src="images/lightbutt.png" 
+          src="https://ik.imagekit.io/qljqw3tvn/ibb/full-butt.png" 
           alt = "lightbutt"/>
           
           <img className='butt-half-land' 
             ref={leftCheekRef} 
             onLoad={onImgLoad}
-            src="images/lightbutt_left.png" 
+            src="https://ik.imagekit.io/qljqw3tvn/ibb/butt-half.png" 
             alt = "lightbutt-half"/>
 
           
@@ -153,7 +153,7 @@ function LandingPage() {
           ref = {jointRef}
         >
         <img className='joint-land' 
-            src="images/Only_joint(1).png" 
+            src="https://ik.imagekit.io/qljqw3tvn/ibb/joint.png" 
             alt = "joint"
             />
           
@@ -168,7 +168,7 @@ function LandingPage() {
               transition={{duration:0.8}} />
             
             <motion.img className='burnt-img' 
-              src= "images/BurntPart.png" 
+              src= "https://ik.imagekit.io/qljqw3tvn/ibb/burnt-part.png" 
               alt="burnt"
               initial={{opacity:0}}
               animate={{opacity:1}}
@@ -180,14 +180,14 @@ function LandingPage() {
         </motion.div>
         {isAnimating?
         <motion.img
-          src='images/L.t.2(1).png' 
+          src='https://ik.imagekit.io/qljqw3tvn/ibb/puffs-lit.png' 
           className='cursor'
           variants={variants}
           animate={cursorVarint}
           />
         :
         <motion.img
-          src='images/L.t.1(1).png' 
+          src='https://ik.imagekit.io/qljqw3tvn/ibb/puffs-unlit.png' 
           className='cursor'
           variants={variants}
           animate={cursorVarint}
@@ -220,13 +220,13 @@ function LandingPage() {
         </div>}
         
         <img className={`landing-img butt-land ${isPortrait? "butt-land-mobile":""}`} 
-          src="images/lightbutt.png" 
+          src="https://ik.imagekit.io/qljqw3tvn/ibb/full-butt.png" 
           alt = "lightbutt"/>
           
           <img className={`butt-half-land ${isPortrait? "butt-half-mobile":""}`} 
             ref={leftCheekRef} 
             onLoad={onImgLoad}
-            src="images/lightbutt_left.png" 
+            src="https://ik.imagekit.io/qljqw3tvn/ibb/butt-half.png" 
             alt = "lightbutt-half"/>
 
           
@@ -242,7 +242,7 @@ function LandingPage() {
           ref = {jointRef}
         >
         <img className={`joint-land ${isPortrait?"joint-land-mobile":""}`} 
-            src="images/Only_joint(1).png" 
+            src="https://ik.imagekit.io/qljqw3tvn/ibb/joint.png" 
             alt = "joint"
             />
           
@@ -269,14 +269,14 @@ function LandingPage() {
         </motion.div>
         {isAnimating?
         <motion.img
-          src='images/L.t.2(1).png' 
+          src='https://ik.imagekit.io/qljqw3tvn/ibb/puffs-lit.png' 
           className='cursor'
           variants={variants}
           animate={cursorVarint}
           />
         :
         <motion.img
-          src='images/L.t.1(1).png' 
+          src='https://ik.imagekit.io/qljqw3tvn/ibb/puffs-unlit.png' 
           className='cursor'
           variants={variants}
           animate={cursorVarint}
@@ -303,13 +303,13 @@ function LandingPage() {
         </div>}
         
         <img className={`landing-img butt-land ${isPortrait? "butt-land-mobile":""}`} 
-          src="images/lightbutt.png" 
+          src="https://ik.imagekit.io/qljqw3tvn/ibb/full-butt.png" 
           alt = "lightbutt"/>
           
           <img className={`butt-half-land ${isPortrait? "butt-half-mobile":""}`} 
             ref={leftCheekRef} 
             onLoad={onImgLoad}
-            src="images/lightbutt_left.png" 
+            src="https://ik.imagekit.io/qljqw3tvn/ibb/butt-half.png" 
             alt = "lightbutt-half"/>
 
           
@@ -325,7 +325,7 @@ function LandingPage() {
           ref = {jointRef}
         >
         <img className={`joint-land ${isPortrait?"joint-land-mobile":""}`} 
-            src="images/Only_joint(1).png" 
+            src="https://ik.imagekit.io/qljqw3tvn/ibb/joint.png" 
             alt = "joint"
             />
           
@@ -352,14 +352,14 @@ function LandingPage() {
         </motion.div>
         {isAnimating?
         <motion.img
-          src='images/L.t.2(1).png' 
+          src='https://ik.imagekit.io/qljqw3tvn/ibb/puffs-lit.png' 
           className='cursor'
           variants={variants}
           animate={cursorVarint}
           />
         :
         <motion.img
-          src='images/L.t.1(1).png' 
+          src='https://ik.imagekit.io/qljqw3tvn/ibb/puffs-unlit.png' 
           className='cursor'
           variants={variants}
           animate={cursorVarint}

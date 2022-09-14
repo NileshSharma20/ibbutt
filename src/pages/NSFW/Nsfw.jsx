@@ -14,7 +14,7 @@ function Nsfw({passMusicFlag}) {
     <>
     <div className='nsfw-container'></div>
      
-            <img className='jointImg' src="images/Joint .png" alt="Joint"
+            <img className='jointImg' src="https://ik.imagekit.io/qljqw3tvn/ibb/nsfw_joint.png" alt="Joint"
             onClick={()=>handleClick()} />
        {/* <img className="nsfw-img" src='images/rad.png' alt='' /> */}
     </>

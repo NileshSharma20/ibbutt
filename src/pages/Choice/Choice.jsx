@@ -27,16 +27,6 @@ function Choice() {
     }
   },[passedFlag])
 
-  // useEffect(()=>{
-  //   if(isPlaying){
-  //     audioRef.current.play()
-  //   }
-  //   else{
-  //     audioRef.current.pause()
-  //   }
-  //   console.log(`${isPlaying}`)
-  // },[isPlaying])
-
   return (
     <>
     <video autoPlay muted loop 
@@ -50,30 +40,30 @@ function Choice() {
       
       <div className="choice-box">
       <img className='choice-img boobs' 
-        src="images/Chesticles(1).png"
+        src="https://ik.imagekit.io/qljqw3tvn/ibb/Chest.png"
         onClick={()=>setFailedFlag(true)} 
         alt = "test"/>
 
-      <img className='choice-img line' src='images/line.png'/>
+      <img className='choice-img line' src='https://ik.imagekit.io/qljqw3tvn/ibb/line.png'/>
       
       <img className='choice-img butt' 
-        src="images/B.t(1).png" 
+        src="https://ik.imagekit.io/qljqw3tvn/ibb/choice-butt_9UFmYrnB4.png" 
         onClick={()=>setPassedFlag(true)}
         alt = "test"/>
       </div>
       <div className="choice-text">
-        <img  className='choose-img-text' src='images/choose.gif' alt="text" />
+        <img  className='choose-img-text' 
+          srcset="https://ik.imagekit.io/qljqw3tvn/tr:w-600/ibb/choice.gif 400w,
+          https://ik.imagekit.io/qljqw3tvn/tr:w-800/ibb/choice.gif 600w,
+          https://ik.imagekit.io/qljqw3tvn/tr:w-900/ibb/choice.gif 800w,"
+          sizes='400px, 600px, 800px'
+          src='https://ik.imagekit.io/qljqw3tvn/tr:w-800/ibb/choice.gif' alt="text" />
       </div>
     </div>
 
     <audio 
       src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" 
       ref={audioRef} />
-
-    {/* <div className={` ${isPortrait?"return-btn-mobile":"return-btn"}`} 
-        onClick={()=>setIsPlaying(!isPlaying)}>
-          {isPlaying? <BsPause />:<BsPlay />}
-    </div> */}
     </>
   )
 }
