@@ -31,7 +31,7 @@ function Choice() {
     <>
     <video autoPlay muted loop 
           className='vid-back'
-          poster="images/psy-back-still.png">
+          poster="https://ik.imagekit.io/qljqw3tvn/ibb/psy-back-still.webp">
             <source src='images/psy-light-back.mp4' 
           type="video/mp4" />
       </video>

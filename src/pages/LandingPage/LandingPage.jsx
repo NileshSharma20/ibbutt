@@ -127,7 +127,7 @@ function LandingPage() {
 
         {isAnimating && !smoke && 
         <div className='text-box'>
-          <img className='text-box-img' src='images/light-it-up.gif' alt='Light it up, bitches'/>
+          <img className='text-box-img' src='https://ik.imagekit.io/qljqw3tvn/ibb/light-it-up.gif' alt='Light it up, bitches'/>
         </div>}
         
         <img className='landing-img butt-land' 
@@ -161,7 +161,7 @@ function LandingPage() {
           {isAnimating&&smoke?
           <div className="smoke-box">
             <motion.img className='smoke-img' 
-              src= "images/smoke.png" 
+              src= "https://ik.imagekit.io/qljqw3tvn/tr:w-400/ibb/smoke.png" 
               alt="smoke"
               initial={{opacity:0}}
               animate={{opacity:1}}
@@ -216,7 +216,7 @@ function LandingPage() {
 
         {isAnimating && !smoke && 
         <div className='text-box text-mobile'>
-          <img className='text-box-img-mobile' src='images/light-it-up.gif' alt='Light it up, bitches'/>
+          <img className='text-box-img-mobile' src='https://ik.imagekit.io/qljqw3tvn/ibb/light-it-up.gif' alt='Light it up, bitches'/>
         </div>}
         
         <img className={`landing-img butt-land ${isPortrait? "butt-land-mobile":""}`} 
@@ -250,7 +250,7 @@ function LandingPage() {
           {isAnimating&&smoke?
           <div className={`${isPortrait?"smoke-box-mobile":"smoke-box"}`}>
             <motion.img className={`smoke-img ${isPortrait?"smoke-img-mobile":""}`} 
-              src= "images/smoke.png" 
+              src= "https://ik.imagekit.io/qljqw3tvn/tr:w-400/ibb/smoke.png" 
               alt="smoke"
               initial={{opacity:0}}
               animate={{opacity:1}}
@@ -299,7 +299,7 @@ function LandingPage() {
 
         {isAnimating && !smoke && 
         <div className='text-box'>
-          <img className='text-box-img' src='images/light-it-up.gif' alt='Light it up, bitches!'/>
+          <img className='text-box-img' src='https://ik.imagekit.io/qljqw3tvn/ibb/light-it-up.gif' alt='Light it up, bitches!'/>
         </div>}
         
         <img className={`landing-img butt-land ${isPortrait? "butt-land-mobile":""}`} 
@@ -333,7 +333,7 @@ function LandingPage() {
           {isAnimating&&smoke?
           <div className={`${isPortrait?"smoke-box-mobile":"smoke-box"}`}>
             <motion.img className={`smoke-img ${isPortrait?"smoke-img-mobile":""}`} 
-              src= "images/smoke.png" 
+              src= "https://ik.imagekit.io/qljqw3tvn/tr:w-400/ibb/smoke.png" 
               alt="smoke"
               initial={{opacity:0}}
               animate={{opacity:1}}
