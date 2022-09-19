@@ -32,7 +32,7 @@ function Failed() {
     
       <div className={` ${isPortrait?"return-btn-mobile":"return-btn"}`} 
         onClick={()=>setReturnTrue(true)}>
-        <img className='try-again' src='https://ik.imagekit.io/qljqw3tvn/ibb/try-Again.gif' alt='try again' />    
+        <img className='try-again' src='https://ik.imagekit.io/qljqw3tvn/ibb/tryAgain_i_oNCA_sp.gif' alt='try again' />    
       </div>  
     </div>
     </>

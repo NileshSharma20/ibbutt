@@ -1,7 +1,6 @@
 import {useState, useEffect, useRef} from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useMediaQuery } from 'react-responsive'
-import { BsPlay, BsPause } from 'react-icons/bs'
+// import { useMediaQuery } from 'react-responsive'
 import "./Choice.css"
 // import ReactHowler from 'react-howler'
 
@@ -9,11 +8,10 @@ function Choice() {
   const navigate = useNavigate();
   const [failedFlag, setFailedFlag] = useState(false)
   const [passedFlag, setPassedFlag] = useState(false)
-  const [isPlaying, setIsPlaying] = useState(false)
 
   const audioRef = useRef();
 
-  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+  // const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
 
   useEffect(()=>{
     if(failedFlag){

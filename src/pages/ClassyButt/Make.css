@@ -14,7 +14,8 @@
     
     background: url(https://ik.imagekit.io/qljqw3tvn/ibb/rad.webp) fixed center no-repeat;
     background-size: cover;
-    
+
+    /* border: 2px solid red; */
 }
 
 .grid-layout{

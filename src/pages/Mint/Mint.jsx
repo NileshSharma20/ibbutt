@@ -1,10 +1,10 @@
 import React from 'react'
-import { useMediaQuery } from 'react-responsive'
+// import { useMediaQuery } from 'react-responsive'
 import './Mint.css'
-import Socials from '../../components/Socials'
+// import Socials from '../../components/Socials'
 
 function Mint() {
-  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+  // const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
 
   return (
     <div className='mint-container'>
@@ -14,7 +14,7 @@ function Mint() {
         <div className="mint-btn">Mint</div>
       </div>
       
-      <Socials />
+      {/* <Socials /> */}
     </div>
   )
 }

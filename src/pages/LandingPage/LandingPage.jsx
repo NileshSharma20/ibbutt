@@ -2,7 +2,7 @@ import {useState, useRef, useEffect} from 'react'
 import './LandingPage.css'
 import {motion} from "framer-motion"
 import { useNavigate } from 'react-router-dom'
-import { BrowserView, MobileView, isMobile  } from 'react-device-detect';
+import { BrowserView, MobileView } from 'react-device-detect';
 import { useMediaQuery } from 'react-responsive'
 
 function LandingPage() {
@@ -122,12 +122,12 @@ function LandingPage() {
     <div className='landing-container' ref={lconRef}>
         {!isAnimating && 
         <div className='text-box'>
-          <img className='text-box-img' src='https://ik.imagekit.io/qljqw3tvn/ibb/putItin_DDyK31msvZ.gif' alt='Put it in'/>
+          <img className='text-box-img' src='https://ik.imagekit.io/qljqw3tvn/ibb/click-to-put-opt.gif' alt='Put it in'/>
         </div>}
 
         {isAnimating && !smoke && 
         <div className='text-box'>
-          <img className='text-box-img' src='https://ik.imagekit.io/qljqw3tvn/ibb/light-it-up.gif' alt='Light it up, bitches'/>
+          <img className='text-box-img' src='https://ik.imagekit.io/qljqw3tvn/ibb/light-it-up-opt_YEsJ9qYPZp.gif' alt='Light it up, bitches'/>
         </div>}
         
         <img className='landing-img butt-land' 
@@ -211,12 +211,12 @@ function LandingPage() {
        
         {!isAnimating && 
         <div className='text-box text-mobile'>
-          <img className='text-box-img-mobile' src='https://ik.imagekit.io/qljqw3tvn/ibb/putItin_DDyK31msvZ.gif' alt='Put it in'/>
+          <img className='text-box-img-mobile' src='https://ik.imagekit.io/qljqw3tvn/ibb/click-to-put-opt.gif' alt='Put it in'/>
         </div>}
 
         {isAnimating && !smoke && 
         <div className='text-box text-mobile'>
-          <img className='text-box-img-mobile' src='https://ik.imagekit.io/qljqw3tvn/ibb/light-it-up.gif' alt='Light it up, bitches'/>
+          <img className='text-box-img-mobile' src='https://ik.imagekit.io/qljqw3tvn/ibb/light-it-up-opt_YEsJ9qYPZp.gif' alt='Light it up, bitches'/>
         </div>}
         
         <img className={`landing-img butt-land ${isPortrait? "butt-land-mobile":""}`} 
@@ -294,12 +294,12 @@ function LandingPage() {
     <div className={`landing-container  ${isPortrait? "landing-mobile":""}`} ref={lconRef}>
         {!isAnimating && 
         <div className='text-box'>
-          <img className='text-box-img' src='https://ik.imagekit.io/qljqw3tvn/ibb/putItin_DDyK31msvZ.gif' alt='Put it in'/>
+          <img className='text-box-img' src='https://ik.imagekit.io/qljqw3tvn/ibb/click-to-put-opt.gif' alt='Put it in'/>
         </div>}
 
         {isAnimating && !smoke && 
         <div className='text-box'>
-          <img className='text-box-img' src='https://ik.imagekit.io/qljqw3tvn/ibb/light-it-up.gif' alt='Light it up, bitches!'/>
+          <img className='text-box-img' src='https://ik.imagekit.io/qljqw3tvn/ibb/light-it-up-opt_YEsJ9qYPZp.gif' alt='Light it up, bitches!'/>
         </div>}
         
         <img className={`landing-img butt-land ${isPortrait? "butt-land-mobile":""}`} 

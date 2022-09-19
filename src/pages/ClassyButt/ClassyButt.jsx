@@ -24,24 +24,44 @@ function ClassyButt() {
     <div className='make-container'>
       <div className="grid-layout">
           <div className="poster-container poster-info">
-            <img className={`comic-img poster-img ${isPortrait?"comic-img-portrait":""}`}  
-              src='images/nft-show.gif' alt="comic"/>
+            {/* <img className={`comic-img poster-img ${isPortrait?"comic-img-portrait":""}`}  
+              src='images/nft-show.gif' alt="comic"/> */}
             
-            <div className={`goto-mint-btn ${isMobile? "goto-mint-btn-mobile":""}`} 
+            {/* <div className={`goto-mint-btn ${isMobile? "goto-mint-btn-mobile":""}`} 
               onClick={()=>setMintFlag(true)}>
                 Get your ass
-            </div>
+            </div> */}
           </div>
         
-        <img className={`failed-text ${isPortrait?"failed-text-mobile-success":""}`} 
+        <img className={`failed-text-swine ${isPortrait?"failed-text-mobile-success":""}`} 
             src="https://ik.imagekit.io/qljqw3tvn/ibb/splendor-small.gif" 
             alt = "test"/>
           
                 
         <img className={`classy-butt ${isPortrait ? "classy-butt-mobile":""}`} 
           src="https://ik.imagekit.io/qljqw3tvn/ibb/MrButt_418OwtD8k.png" alt = "test"/>
+      
+      <div className="scroll"></div>
       </div>
-      {/* <Socials /> */}
+      
+
+      <Socials />
+    </div>
+
+    <div className='make-container'>
+        {/* <div className="grid-layout"> */}
+          <div className="poster-container poster-info">
+              <img className={`comic-img poster-img ${isPortrait?"comic-img-portrait":""}`}  
+                src='images/nft-show.gif'
+                // src="https://ik.imagekit.io/qljqw3tvn/ibb/Multi_Frame_Art_Video_XIHK0nLPu.gif" 
+                alt="comic"/>
+              
+              <div className={`goto-mint-btn ${isMobile? "goto-mint-btn-mobile":""}`} 
+                onClick={()=>setMintFlag(true)}>
+                  Get your ass
+              </div>
+            </div>
+        {/* </div> */}
     </div>
 
     {/* <div className='make-container'>
