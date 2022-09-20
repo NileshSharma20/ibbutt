@@ -17,9 +17,9 @@ function Socials() {
             alt="twitter" />
           </a>
           
-          <img className={`mint-img open-sea ${isPortrait ?"mint-img-mobile":""}`}
+          {/* <img className={`mint-img open-sea ${isPortrait ?"mint-img-mobile":""}`}
             src ="https://ik.imagekit.io/qljqw3tvn/ibb/openseaIcon_-_ROVZaKjg.png" 
-            alt="opeansea" />
+            alt="opeansea" /> */}
     </div>
   )
 }
