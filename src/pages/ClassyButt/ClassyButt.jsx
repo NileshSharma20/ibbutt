@@ -52,15 +52,21 @@ function ClassyButt() {
         {/* <div className="grid-layout"> */}
           <div className="poster-container poster-info">
               <img className={`comic-img poster-img ${isPortrait?"comic-img-portrait":""}`}  
-                src='images/nft-show.gif'
-                // src="https://ik.imagekit.io/qljqw3tvn/ibb/Multi_Frame_Art_Video_XIHK0nLPu.gif" 
+                // src='images/nft-show.gif'
+                src="https://ik.imagekit.io/qljqw3tvn/ibb/Multi_Frame_Art_Video_XIHK0nLPu.gif" 
                 alt="comic"/>
               
               <div className={`goto-mint-btn ${isMobile? "goto-mint-btn-mobile":""}`} 
                 onClick={()=>setMintFlag(true)}>
-                  Get your ass
+                  <img className='try-again' src='https://ik.imagekit.io/qljqw3tvn/ibb/getYourAssBtn_80wwRhfcw.gif' alt='Get your ass' />    
+            
               </div>
             </div>
+            {/* <div className={` ${isPortrait?"return-btn-mobile":"return-btn"}`} 
+              onClick={()=>setReturnTrue(true)}>
+              <img className='try-again' src='https://ik.imagekit.io/qljqw3tvn/ibb/tryAgain_i_oNCA_sp.gif' alt='try again' />    
+            </div>   */}
+
         {/* </div> */}
     </div>
 
