@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import './Make.css'
 import Socials from '../../components/Socials';
 import "./ClassyButt.css"
+import Poster from '../../components/Poster';
 
 function ClassyButt() {
   const navigate = useNavigate();
@@ -72,6 +73,12 @@ function ClassyButt() {
             </div>
 
         </div>
+    </div>
+
+    <div className="make-container">
+      <div className="grid-layout">
+        <Poster />
+      </div>
     </div>
 
     {/* <div className='make-container'>

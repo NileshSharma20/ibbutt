@@ -1,0 +1,90 @@
+@import url(//db.onlinewebfonts.com/c/251039e6849ad977a8bfc40b564dce89?family=Didot);
+.poster-box{
+    position: relative;
+    /* display: flex; */
+
+    min-width: 300px;
+    width: 30vw;
+    min-height: 300px;
+    height: auto;
+
+    padding: 10px 15px ;
+
+    font-family: "Didot";
+    text-align: center;
+
+    background-color: white;
+    
+    border: 4px solid black;
+    border-radius: 15px;
+
+    transform: rotate(-1deg);
+}
+
+.poster-box>h1{
+    font-family: "Didot";
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.poster-mid-section{
+    position: relative;
+    display: flex;
+
+    font-family: "Didot";
+    font-weight: 400;
+}
+
+.poster-mid-section>h1{
+    margin-top: 10px;
+}
+
+.poster-details-img{
+    position: relative;
+    width: 40%;
+    left: -15px;
+
+    /* border: 2px solid black; */
+}
+
+.poster-details{
+    position: relative;
+    /* right:0; */
+    display: flex;
+    flex-direction: column;
+    float: right;
+
+    width: 60%;
+
+    /* border: 2px solid black; */
+}
+
+.poster-details>h1{
+    font-family: "Didot";
+    font-weight: 400;
+    margin: 10px 0;
+
+    display: relative;
+}
+
+.poster-details-para{
+    position: relative;
+
+    padding: 10px 0;
+
+    font-family: "Didot";
+    font-size: 1.4rem;
+}
+
+
+.underline {
+    position: absolute;
+    width: 90%;
+    border-bottom: 3px solid black; 
+    border-radius: 2px;
+    left: 5%;
+    bottom: -5px;
+    /* background-color: black; */
+    /* transform: rotate(2deg); */
+  }  
+
