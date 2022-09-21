@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ibbutt/static/css/main.e702b1cf.chunk.css",
+    "main.js": "/ibbutt/static/js/main.26e670ef.chunk.js",
+    "main.js.map": "/ibbutt/static/js/main.26e670ef.chunk.js.map",
+    "runtime-main.js": "/ibbutt/static/js/runtime-main.53d56378.js",
+    "runtime-main.js.map": "/ibbutt/static/js/runtime-main.53d56378.js.map",
+    "static/js/2.9134a49a.chunk.js": "/ibbutt/static/js/2.9134a49a.chunk.js",
+    "static/js/2.9134a49a.chunk.js.map": "/ibbutt/static/js/2.9134a49a.chunk.js.map",
+    "index.html": "/ibbutt/index.html",
+    "static/css/main.e702b1cf.chunk.css.map": "/ibbutt/static/css/main.e702b1cf.chunk.css.map",
+    "static/js/2.9134a49a.chunk.js.LICENSE.txt": "/ibbutt/static/js/2.9134a49a.chunk.js.LICENSE.txt",
+    "static/media/Mint.css": "/ibbutt/static/media/weed-back.fb96b5ff.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.53d56378.js",
+    "static/js/2.9134a49a.chunk.js",
+    "static/css/main.e702b1cf.chunk.css",
+    "static/js/main.26e670ef.chunk.js"
+  ]
+}
