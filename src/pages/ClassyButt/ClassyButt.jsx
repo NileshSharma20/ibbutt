@@ -29,7 +29,7 @@ function ClassyButt() {
   return (
     <>
     <div className='make-container'>
-      <div className="grid-layout">
+      {/* <div className="grid-layout"> */}
           {/* <div className="poster-container poster-info">
             <img className={`comic-img poster-img ${isPortrait?"comic-img-portrait":""}`}  
               src='images/nft-show.gif' alt="comic"/>
@@ -49,7 +49,7 @@ function ClassyButt() {
           src="https://ik.imagekit.io/qljqw3tvn/ibb/MrButt_418OwtD8k.png" alt = "test"/>
       
       
-      </div>
+      {/* </div> */}
       
       
       <Socials />
@@ -66,7 +66,6 @@ function ClassyButt() {
             <div className={`goto-mint-btn ${isMobile? "goto-mint-btn-mobile":""}`} 
                 onClick={()=>setMintFlag(true)}>
                   <img className='try-again' src='https://ik.imagekit.io/qljqw3tvn/ibb/getYourAssBtn_80wwRhfcw.gif' alt='Get your ass' />
-                  {/* <Poster /> */}
             </div>
               
             </div>

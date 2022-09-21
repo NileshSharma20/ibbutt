@@ -75,7 +75,7 @@
     padding: 10px 0;
 
     font-family: "Didot";
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 
@@ -90,3 +90,12 @@
     /* transform: rotate(2deg); */
   }  
 
+  @media only screen and (max-width: 1300px) {
+    .poster-mid-section>h1{
+        font-size: 1rem;
+    }
+
+    .poster-details-para{
+        font-size: 1rem;
+    }
+  }

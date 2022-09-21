@@ -75,12 +75,12 @@
 .mint-img{
     /* position: fixed; */
     /* bottom: 50vh; */
-    width: clamp(100px,20vw,20vw);
+    width: clamp(350px,20vw,20vw);
     cursor: pointer;
     transition: 0.3s ease-in-out;
 
     transform: rotate(90deg);
-    filter: drop-shadow(0 0mm 6mm rgb(200, 255, 0));
+    filter: drop-shadow(0 0mm 8mm rgb(200, 255, 0));
 }
 
 .dc{
@@ -96,7 +96,7 @@
 }
 
 .mint-img-mobile{
-    width: clamp(100px,10vw,10vw);
+    width: clamp(200px,10vw,10vw);
     /* user-select: none; */
 }
 
@@ -104,8 +104,23 @@
     transform: scale(1.1) rotate(90deg);
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 850px){
     .social-grid{
+        bottom:60vh;
+    }
+}
+
+@media only screen and (max-width: 758px) {
+    .social-grid{
+        position: absolute;
+        top:20vh;
+        left:-8vw;
+        bottom: 10vh;
         gap: 3vw;
+        /* transform: rotate(-90deg); */
+    }
+    .mint-img{
+        /* transform: rotate(90deg); */
+        filter: drop-shadow(0 0mm 5mm rgb(0, 47, 255));
     }
 }
