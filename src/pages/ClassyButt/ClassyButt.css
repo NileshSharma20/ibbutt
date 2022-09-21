@@ -17,12 +17,17 @@
 .scroll {
     width: 60px;
     height: 60px;
+    
     border: 5px solid black;
     background-color: black;
     border-radius: 50%;
+    
     position: absolute;
     bottom:5vh;
     left: 50%;
+
+    z-index: 6;
+    cursor: pointer;
     animation: down 1.5s infinite;
     -webkit-animation: down 1.5s infinite;
 }
