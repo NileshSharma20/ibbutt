@@ -11,7 +11,7 @@ import Mint from './pages/Mint/Mint';
 
 
 function App() {
-  const music_url = "music/web_music.mp3"
+  const music_url = "/music/web_music.mp3"
 
   const [playMusicFlag, setPlayMusicFlag] = useState(false)
   
@@ -26,7 +26,7 @@ function App() {
 
       <Player url={music_url} playFlag={playMusicFlag} />
         <Routes>
-          <Route path='/' element={<Nsfw passMusicFlag={setPlayMusicFlag} />} />
+          <Route path="/" element={<Nsfw passMusicFlag={setPlayMusicFlag} />} />
           <Route path='/light-it-up' element={<LandingPage />} />
           <Route path='/choice' element={<Choice />} />
           <Route path='/failed' element={<Failed />} />
