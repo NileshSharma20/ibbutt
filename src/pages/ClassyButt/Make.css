@@ -263,7 +263,7 @@
 .goto-mint-btn{
     position: absolute;
     left:50%;
-    bottom: 15%;
+    bottom: 10%;
     transform: translate(-50%,0);
     min-width: 100px;
     width: 10vw;

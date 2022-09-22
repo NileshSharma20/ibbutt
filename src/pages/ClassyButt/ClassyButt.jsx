@@ -63,10 +63,11 @@ function ClassyButt() {
                 src="https://ik.imagekit.io/qljqw3tvn/ibb/poster_zp_z6LwlR.png" 
                 alt="comic"/> */}
             <Poster />
-            <div className={`goto-mint-btn ${isMobile? "goto-mint-btn-mobile":""}`} 
+            {/* mintButton */}
+            {/* <div className={`goto-mint-btn ${isMobile? "goto-mint-btn-mobile":""}`} 
                 onClick={()=>setMintFlag(true)}>
                   <img className='try-again' src='https://ik.imagekit.io/qljqw3tvn/ibb/getYourAssBtn_80wwRhfcw.gif' alt='Get your ass' />
-            </div>
+            </div> */}
               
             </div>
 
@@ -80,12 +81,6 @@ function ClassyButt() {
 
         </div>
     </div>
-
-    {/* <div className="make-container">
-      <div className="grid-layout">
-        <Poster />
-      </div>
-    </div> */}
 
     <div className="scroll" 
         onClick={()=>handleScroll()}
