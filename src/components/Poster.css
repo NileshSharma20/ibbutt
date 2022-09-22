@@ -79,11 +79,13 @@
 .poster-details-para{
     position: relative;
 
-    padding: 10px 0;
+    margin: 10px 0 10px 0;
 
     font-family: Didot;
     font-size: 1.3rem;
     line-height: 1.5rem;
+
+    /* border: 2px solid black; */
 }
 
 
