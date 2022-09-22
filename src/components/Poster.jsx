@@ -18,7 +18,7 @@ function Poster() {
 
             <div className="poster-details">
                 <div className="poster-details-para">
-                    <span style={{fontWeight:"600", fontFamily:"Didot"}}>We are reserving 210 asses (4.2%).</span> Because we like getting high and getting fucked.
+                    <span style={{fontWeight:"600", fontFamily:"Didot"}}>We are reserving 4.2%.</span> Because we like getting high and getting fucked.
                     
                     <div className="underline"></div>
                 </div>
