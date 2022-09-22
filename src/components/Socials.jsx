@@ -5,9 +5,12 @@ function Socials() {
 
   return (
     <div className="social-grid">
-          <img className={`mint-img dc ${isPortrait ?"mint-img-mobile":""}`} 
-            src ="https://ik.imagekit.io/qljqw3tvn/ibb/dcIcon_k7h69j_3L.png" 
-            alt="discord" />
+          <a href="https://discord.gg/w7q4ugV5Pk"
+            target="_blank" rel="noreferrer"> 
+            <img className={`mint-img dc ${isPortrait ?"mint-img-mobile":""}`} 
+              src ="https://ik.imagekit.io/qljqw3tvn/ibb/dcIcon_k7h69j_3L.png" 
+              alt="discord" />
+            </a>
           
           <a href="https://twitter.com/IBbootypuffs" 
             // className={`mint-img ${isPortrait ?"mint-img-mobile":""}`}
