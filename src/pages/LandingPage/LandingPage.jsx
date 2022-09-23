@@ -201,14 +201,16 @@ function LandingPage() {
       {isPortrait? 
       <>
       
-      <video autoPlay muted loop 
+      <video autoPlay muted loop playsinline
             className='vid-back'
             poster="https://ik.imagekit.io/qljqw3tvn/ibb/psy-still.webp">
               <source src="https://ik.imagekit.io/qljqw3tvn/ibb/psy-back.mp4"
               type="video/mp4"/>
         </video>
         
-        <div className="landing-container" ref={lconRef}>
+        <div className="landing-container" ref={lconRef}
+        // style={{background:"url(https://ik.imagekit.io/qljqw3tvn/ibb/psy-still.webp) no-repeat center fixed"}} 
+        >
        
         {!isAnimating && 
         <div className='text-box text-mobile'>
