@@ -80,7 +80,7 @@
     transition: 0.3s ease-in-out;
 
     transform: rotate(90deg);
-    animation: glow 5s infinite;
+    animation: glow 3s infinite;
     
 }
 
