@@ -201,15 +201,15 @@ function LandingPage() {
       {isPortrait? 
       <>
       
-      <video autoPlay muted loop playsinline
+      {/* <video autoPlay muted loop playsinline
             className='vid-back'
             poster="https://ik.imagekit.io/qljqw3tvn/ibb/psy-still.webp">
               <source src="https://ik.imagekit.io/qljqw3tvn/ibb/psy-back.mp4"
               type="video/mp4"/>
-        </video>
+        </video> */}
         
         <div className="landing-container" ref={lconRef}
-        // style={{background:"url(https://ik.imagekit.io/qljqw3tvn/ibb/psy-still.webp) no-repeat center fixed"}} 
+        style={{background:"url(https://ik.imagekit.io/qljqw3tvn/ibb/psy-still.webp) no-repeat center fixed"}} 
         >
        
         {!isAnimating && 
@@ -288,13 +288,15 @@ function LandingPage() {
       </>
       : 
     <>
-      <video autoPlay muted loop 
+      {/* <video autoPlay muted loop playsinline
           className='vid-back'
           poster="https://ik.imagekit.io/qljqw3tvn/ibb/psy-still.webp">
             <source src="https://ik.imagekit.io/qljqw3tvn/ibb/psy-back.mp4"
               type="video/mp4"/>
-      </video>
-    <div className={`landing-container`} ref={lconRef}>
+      </video> */}
+    <div className="landing-container"
+    style={{background:"url(https://ik.imagekit.io/qljqw3tvn/ibb/psy-still.webp) no-repeat center fixed"}}
+    ref={lconRef}>
         {!isAnimating && 
         <div className='text-box'>
           <img className='text-box-img' src='https://ik.imagekit.io/qljqw3tvn/ibb/click-to-put-opt.gif' alt='Put it in'/>
