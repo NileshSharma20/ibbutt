@@ -114,9 +114,10 @@ function LandingPage() {
    <BrowserView>
    <video autoPlay muted loop 
     className='vid-back'
+    poster="https://ik.imagekit.io/qljqw3tvn/ibb/psy-still.webp"
     alt="background">
-      <source src='images/psy-light-back.mp4' 
-    type="video/mp4" />
+      <source src="https://ik.imagekit.io/qljqw3tvn/ibb/psy-back.mp4"
+              type="video/mp4"/>
     </video>
 
     <div className='landing-container' ref={lconRef}>
@@ -202,9 +203,9 @@ function LandingPage() {
       
       <video autoPlay muted loop 
             className='vid-back'
-            poster="images/psy-back-still.png">
-              <source src='images/psy-light-back.mp4' 
-            type="video/mp4" />
+            poster="https://ik.imagekit.io/qljqw3tvn/ibb/psy-still.webp">
+              <source src="https://ik.imagekit.io/qljqw3tvn/ibb/psy-back.mp4"
+              type="video/mp4"/>
         </video>
         
         <div className="landing-container" ref={lconRef}>
@@ -287,9 +288,9 @@ function LandingPage() {
     <>
       <video autoPlay muted loop 
           className='vid-back'
-          poster="images/psy-back-still.png">
-            <source src='images/psy-light-back.mp4' 
-          type="video/mp4" />
+          poster="https://ik.imagekit.io/qljqw3tvn/ibb/psy-still.webp">
+            <source src="https://ik.imagekit.io/qljqw3tvn/ibb/psy-back.mp4"
+              type="video/mp4"/>
       </video>
     <div className={`landing-container  ${isPortrait? "landing-mobile":""}`} ref={lconRef}>
         {!isAnimating && 

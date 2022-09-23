@@ -15,13 +15,16 @@ function Failed() {
       // navigate('/', { replace: true })
     }
   },[returnTrue])
+
   return (
     <>
     <video autoPlay muted loop 
           className='vid-back'
           poster="images/psy-back-still.png">
-            <source src='images/psy-light-back.mp4' 
-          type="video/mp4" />
+            <source src="https://ik.imagekit.io/qljqw3tvn/ibb/psy-back.mp4"
+              type="video/mp4"/>
+            {/* <source src='images/psy-light-back.mp4' 
+              type="video/mp4" /> */}
       </video>
     <div className='cb-container failed-back'>
         <img className={`failed-text-swine ${isPortrait?"failed-text-mobile":""}`} 

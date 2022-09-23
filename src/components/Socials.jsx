@@ -5,7 +5,7 @@ function Socials() {
 
   return (
     <div className="social-grid">
-          <a href="https://discord.gg/w7q4ugV5Pk"
+          <a href="https://discord.gg/vf8Kf5zsej"
             target="_blank" rel="noreferrer"> 
             <img className={`mint-img dc ${isPortrait ?"mint-img-mobile":""}`} 
               src ="https://ik.imagekit.io/qljqw3tvn/ibb/dcIcon_k7h69j_3L.png" 

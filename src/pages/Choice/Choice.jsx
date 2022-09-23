@@ -30,8 +30,8 @@ function Choice() {
     <video autoPlay muted loop 
           className='vid-back'
           poster="https://ik.imagekit.io/qljqw3tvn/ibb/psy-back-still.webp">
-            <source src='images/psy-light-back.mp4' 
-          type="video/mp4" />
+            <source src="https://ik.imagekit.io/qljqw3tvn/ibb/psy-back.mp4"
+              type="video/mp4"/>
       </video>
     
     <div className='choice-container'>
