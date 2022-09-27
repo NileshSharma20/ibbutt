@@ -31,7 +31,7 @@ function App() {
           <Route path='/choice' element={<Choice />} />
           <Route path='/failed' element={<Failed />} />
           <Route path='/welcome' element={<ClassyButt />} />
-          <Route path='/mint' element={<Mint />} />
+          <Route path='/mintOnHold' element={<Mint />} />
         </Routes>
       </div>
     </Router>
