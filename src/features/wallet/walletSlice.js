@@ -1,8 +1,11 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import walletService from './walletService'
 
+const wallet = JSON.parse(localStorage.getItem('wallet'))
+// console.log(`wallet:${JSON.stringify(wallet,null,4)}`)
+
 const initialState ={
-    walletAddress: "",
+    walletAddress: wallet ? wallet.walletID:"",
     message: ''
 }
 
@@ -36,7 +39,7 @@ export const walletSlice = createSlice({
         builder
             .addCase(connectWallet.fulfilled, (state,action) => {
                 if(typeof(action.payload) !== 'undefined'){
-                    console.log(action.payload)
+                    // console.log(action.payload)
                     state.walletAddress = action.payload
                 }
             })
