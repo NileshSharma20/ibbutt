@@ -42,8 +42,17 @@
     height: auto;
     min-width: 350px;
     width: 30vw;
+
+    object-fit: contain;
     /* box-shadow: inset ; */
     /* border: 2px solid black; */
+}
+
+.choose-img-text-por{
+    position: relative;
+    top:5vh;
+    width: 80vw;
+    height: auto;
 }
 
 .line{
@@ -78,6 +87,22 @@
 
 @media only screen and (max-width: 850px) {
     .choice-text{
-        top:10vh;
+        top:-20px;
+        min-width: none;
+        /* width: 15vw; */
+        /* border: 2px solid black; */
+    }
+
+    .choose-img-text{
+        min-width: none;
+        height: 40vh;
+        width: auto;
+    }
+
+    .choose-img-text-por{
+        position: relative;
+        top:5vh;
+        width: 80vw;
+        height: auto;
     }
 }

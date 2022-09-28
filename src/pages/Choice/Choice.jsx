@@ -1,6 +1,6 @@
 import {useState, useEffect, useRef} from 'react'
 import { useNavigate } from 'react-router-dom'
-// import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive'
 import "./Choice.css"
 // import ReactHowler from 'react-howler'
 
@@ -11,7 +11,7 @@ function Choice() {
 
   const audioRef = useRef();
 
-  // const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
 
   useEffect(()=>{
     if(failedFlag){
@@ -50,7 +50,7 @@ function Choice() {
         alt = "test"/>
       </div>
       <div className="choice-text">
-        <img  className='choose-img-text' 
+        <img  className={`choose-img-text ${isPortrait?"choose-img-text-por":""}`} 
           srcset="https://ik.imagekit.io/qljqw3tvn/tr:w-500/ibb/choose-wisely.gif 400w,
           https://ik.imagekit.io/qljqw3tvn/tr:w-700/ibb/choose-wisely.gif 600w,
           https://ik.imagekit.io/qljqw3tvn/tr:w-1000/ibb/choose-wisely.gif 800w,"

@@ -124,7 +124,13 @@
 
 @media only screen and (max-width: 850px){
     .social-grid{
-        bottom:60vh;
+        position: absolute;
+        top:20vh;
+        left:-8vw;
+        bottom: 10vh;
+        gap: 3vw;
+        /* background-color: black; */
+        /* transform: rotate(-90deg); */
     }
 }
 
@@ -135,6 +141,7 @@
         left:-8vw;
         bottom: 10vh;
         gap: 3vw;
+        /* background-color: black; */
         /* transform: rotate(-90deg); */
     }
     .mint-img{

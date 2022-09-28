@@ -49,9 +49,6 @@ function ClassyButt() {
           src="https://ik.imagekit.io/qljqw3tvn/ibb/MrButt_418OwtD8k.png" alt = "test"/>
       
       
-      {/* </div> */}
-      
-      
       <Socials />
     </div>
 
@@ -72,8 +69,7 @@ function ClassyButt() {
             </div>
 
             <div className="poster-container poster-info">
-              <img className={`comic-img poster-img ${isPortrait?"comic-img-portrait":""}`}  
-                // src='images/nft-show.gif'
+              <img className={`comic-img poster-img ${isPortrait && "comic-img-portrait"}`}  
                 src="https://ik.imagekit.io/qljqw3tvn/ibb/Multi_Frame_Art_Video_XIHK0nLPu.gif" 
                 alt="comic"/>
             
