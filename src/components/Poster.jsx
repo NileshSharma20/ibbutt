@@ -6,7 +6,7 @@ function Poster() {
     <div className='poster-box'>
         
         <div className='poster-mid-section'>
-            <h1 style={{fontWeight:"600", fontFamily:"Didot", marginTop:"5px"}} >A new StonerVerse that gives our community a place to chill and get high together.</h1>
+            <h1 style={{fontWeight:"400", fontFamily:"Didot", marginTop:"5px"}} >A new StonerVerse that gives our community a place to chill and get high together.</h1>
             <div className="underline"></div>
         </div>
 
@@ -18,14 +18,14 @@ function Poster() {
 
             <div className="poster-details">
                 <div className="poster-details-para">
-                    <span style={{fontWeight:"600", fontFamily:"Didot"}}>Launching Grinders, Rolling Paper, and Rolling Cones with the IBBP brand and the NFTs.</span> 
+                    <span style={{fontWeight:"400", fontFamily:"Didot"}}>Launching Grinders, Rolling Paper, and Rolling Cones with the IBBP brand and the NFTs.</span> 
                     {/* Because we like getting high and getting fucked. */}
                     
                     <div className="underline"></div>
                 </div>
                 
                 <div className="poster-details-para">
-                    <span style={{fontWeight:"600", fontFamily:"Didot"}}>CCO.</span> Discord available for those baked out of their minds lol.
+                    <span style={{fontWeight:"400", fontFamily:"Didot"}}>CCO.</span> Discord available for those baked out of their minds lol.
                 </div>
             </div>
             <div className='underline'></div>
