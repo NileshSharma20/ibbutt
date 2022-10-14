@@ -6,6 +6,8 @@ import './Make.css'
 import Socials from '../../components/Socials';
 import "./ClassyButt.css"
 import Poster from '../../components/Poster';
+import Utilities from './Utilities';
+import Banner from './Banner';
 
 function ClassyButt() {
   const navigate = useNavigate();
@@ -54,23 +56,23 @@ function ClassyButt() {
     {isMobile?
     <>
     
-      <div className='make-container' ref={posterRef}>
-        <div className={`${isPortrait?"grid-layout":"grid-layout-mobile"}`}>
+      {/* <div className='make-container' ref={posterRef}>
+        <div className={`${isPortrait?"grid-layout":"grid-layout-mobile"}`}> */}
           
-          <div className="poster-container poster-info">
+          {/* <div className="poster-container poster-info"> */}
             {/* <img className={`comic-img poster-img ${isPortrait?"comic-img-portrait":""}`}  
                 src="https://ik.imagekit.io/qljqw3tvn/ibb/poster_zp_z6LwlR.png" 
                 alt="comic"/> */}
-            <Poster />
+            {/* <Poster /> */}
             {/* mintButton */}
             {/* <div className={`goto-mint-btn ${isMobile? "goto-mint-btn-mobile":""}`} 
                 onClick={()=>setMintFlag(true)}>
                   <img className='try-again' src='https://ik.imagekit.io/qljqw3tvn/ibb/getYourAssBtn_80wwRhfcw.gif' alt='Get your ass' />
             </div> */}
               
-            </div>
+            {/* </div> */}
 
-            <div className="poster-container poster-info">
+            {/* <div className="poster-container poster-info">
               <img className={`comic-img poster-img ${isPortrait && "comic-img-portrait"}`}  
                 src="https://ik.imagekit.io/qljqw3tvn/ibb/Multi_Frame_Art_Video_XIHK0nLPu.gif" 
                 alt="comic"/>
@@ -78,27 +80,27 @@ function ClassyButt() {
             </div>
 
         </div>
-    </div>
+    </div> */}
     </>
     :
     <>
-    <div className='make-container' ref={posterRef}>
-        <div className="grid-layout">
+    {/* <div className='make-container' ref={posterRef}>
+        <div className="grid-layout"> */}
           
-          <div className="poster-container poster-info">
+          {/* <div className="poster-container poster-info"> */}
             {/* <img className={`comic-img poster-img ${isPortrait?"comic-img-portrait":""}`}  
                 src="https://ik.imagekit.io/qljqw3tvn/ibb/poster_zp_z6LwlR.png" 
                 alt="comic"/> */}
-            <Poster />
+            {/* <Poster /> */}
             {/* mintButton */}
             {/* <div className={`goto-mint-btn ${isMobile? "goto-mint-btn-mobile":""}`} 
                 onClick={()=>setMintFlag(true)}>
                   <img className='try-again' src='https://ik.imagekit.io/qljqw3tvn/ibb/getYourAssBtn_80wwRhfcw.gif' alt='Get your ass' />
             </div> */}
               
-            </div>
+            {/* </div> */}
 
-            <div className="poster-container poster-info">
+            {/* <div className="poster-container poster-info">
               <img className={`comic-img poster-img ${isPortrait && "comic-img-portrait"}`}  
                 src="https://ik.imagekit.io/qljqw3tvn/ibb/Multi_Frame_Art_Video_XIHK0nLPu.gif" 
                 alt="comic"/>
@@ -106,9 +108,12 @@ function ClassyButt() {
             </div>
 
         </div>
-    </div>
+    </div> */}
     </>}
-
+    <div  ref={posterRef}>
+    <Banner />
+    </div>
+    <Utilities />
     <div className="scroll" 
         onClick={()=>handleScroll()}
         ></div>

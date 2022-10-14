@@ -55,8 +55,8 @@
 }
 
 .social-grid{
-    position: fixed;
-    /* position: relative; */
+    /* position: fixed; */
+    position: absolute;
     left: -5vw;
     bottom: 45vh;
     width: 10vw;
@@ -156,6 +156,18 @@
 
 .mint-img:hover{
     transform: scale(1.1) rotate(90deg);
+}
+
+@media only screen and (max-width: 1380px){
+    .social-grid{
+        position: absolute;
+        top:20vh;
+        left:-8vw;
+        bottom: 10vh;
+        gap: 3vw;
+        /* background-color: black; */
+        /* transform: rotate(-90deg); */
+    }
 }
 
 @media only screen and (max-width: 850px){
