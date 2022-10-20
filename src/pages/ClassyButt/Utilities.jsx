@@ -5,8 +5,8 @@ import UtilCard from '../../components/UtilCard'
 
 function Utilities() {
   return (
-    <div className='util-container'>
-      <div className="util-cover">
+    <div className='util-container' style={{backgroundColor:"#fb5607"}}>
+      <div className="util-cover" style={{color:"antiquewhite"}}>
         Utilities
       </div>
         <div className="util-grid">

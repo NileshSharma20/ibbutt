@@ -7,6 +7,7 @@ function Banner() {
     const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
 
   return (
+    <>
     <div className='util-container' >
         <div className="banner-content">
             <div className="poster-container poster-info">
@@ -21,11 +22,14 @@ function Banner() {
 
             
         </div>
-        <div className="util-cover" >
+        </div>
+        <div className='util-container'  style={{backgroundColor:"#8338ec"}} >
+        <div className="util-cover">
             The High Minds behind Itty Bitty Booty Puffs 
         </div>
         <div className="banner-text">Img here</div>
     </div>
+  </>
   )
 }
 
