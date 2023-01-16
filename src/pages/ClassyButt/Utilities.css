@@ -190,6 +190,7 @@
     }
     .util-card{
         width: 100%;
+        background-color: red;
     }
     .util-content-box{
         width: 80%;
