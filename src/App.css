@@ -1,8 +1,8 @@
-@import url(//db.onlinewebfonts.com/c/15031fcbd02829b8662043de389adefd?family=Stray+Cat);
+/* @import url(//db.onlinewebfonts.com/c/15031fcbd02829b8662043de389adefd?family=Stray+Cat); */
 
 @font-face{
-  src: url(./fonts/TheanoDidot-Regular.ttf);
-  font-family: Didot;
+  src: url(./fonts/Stray-Cat.ttf);
+  font-family: Stray Cat;
 }
 
 * {

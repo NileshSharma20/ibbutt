@@ -6,7 +6,7 @@
     grid-template-rows: 80vh 20vh;
     justify-content: center;
     align-items: center;
-    background: url(../../background-image/weed-back.png) fixed center no-repeat;
+    /* background: url(../../background-image/weed-back.png) fixed center no-repeat; */
     /* border: 2px solid black; */
 }
 
