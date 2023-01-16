@@ -204,6 +204,7 @@
     }
     .util-card{
         width: 100%;
+        height: auto;
     }
 
     .banner-text,.util-list{
