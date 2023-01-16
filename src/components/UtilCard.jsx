@@ -9,14 +9,22 @@ function UtilCard({title, content}) {
                 <div className="util-heading">
                     {title}
                 </div>
+
+                {title==="Retail"?
+                <ul className='util-list'>
+                  <li style={{marginBottom:"1rem", listStyleType: "circle"}}>Storage Pouches, Hookahs, Pipes, Bongs, Grinders, Rolling Paper, and Cannabis Vapes among <a target="_blank" rel="noreferrer" href="https://www.cnet.com/culture/best-weed-accessories/">others</a> will be sold with the Booty Puffs branding</li>
+                  {content.map((item,index)=>
+                  <li style={{marginBottom:"1rem", listStyleType: "circle"}}>{item}</li>
+                  )}
+                </ul>
+                :
                 <ul className='util-list'>
                     {content.map((item, index)=>
                     <li style={{marginBottom:"1rem", listStyleType: "circle"}}>{item}</li>     
                     )}
-                    {/* <li>Our Stoners will have a way to chill and get high together in the metaverse.</li>
-                    <li>A collaborative-experiment – A members only house to see what 5420 stoned minds can do. </li> */}
                     
                 </ul>
+                }
         </div>
     </div>
   )
