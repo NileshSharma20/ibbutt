@@ -73,8 +73,8 @@
 }
 
 .social-grid-mobile{
-    position: fixed;
-    /* position: relative; */
+    /* position: fixed; */
+    position: absolute;
     left: -5vw;
     bottom: 45vh;
     width: 10vw;

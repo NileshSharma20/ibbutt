@@ -190,6 +190,7 @@
     }
     .util-card{
         width: 100%;
+        /* background-color: red; */
     }
     .util-content-box{
         width: 80%;
@@ -204,9 +205,17 @@
     }
     .util-card{
         width: 100%;
+        height: auto;
+    }
+    .util-content-box{
+        width: 80%;
+        /* border: 2px solid red; */
     }
 
-    .banner-text,.util-list{
+    .banner-text{
+        font-size: 0.8rem;
+    }
+    .util-list{
         font-size: 0.8rem;
     }
 }
