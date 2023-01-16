@@ -2,15 +2,27 @@
     width: 100%;
     min-height: 50vh;
 
+    position: relative;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    padding-bottom: 50px;
-
-    background-color: #ffbf69;
+    /* padding-bottom: 50px; */
+    background-image: repeating-linear-gradient(white 0px, white 24px, steelblue 25px);
+    /* background: url("https://res.cloudinary.com/danielmeilleurimg/tictactoe/chalkboard-250");
+    background-size: cover; */
 }
+
+.util-container::before {
+    content: '';
+    position:absolute;
+    left: 50px;
+    height: 100%;
+    width: 2px;
+    background: rgba(255,0,0,0.4);
+  }
 
 .util-cover{
     width: 50%;
@@ -25,6 +37,7 @@
     text-align: center;
     /* border:2px solid red; */
 }
+
 
 .util-grid{
     position: relative;
@@ -45,24 +58,44 @@
     /* background-color: red; */
 }
 
+/* .lines {
+    margin-top: 40px;
+    height: calc(100% - 40px);
+    width: 100%;
+    background-image: repeating-linear-gradient(white 0px, white 24px, steelblue 25px);
+  } */
+
 .banner-content{
     width: 70vw;
     min-height: 20vh;
 
+    /* color:beige; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    background-color: #ffbf69;
+    /* border: 2px solid red; */
+
+    /* background-color: #ffbf69; */
 }
 
 .banner-text{
     width: 70%;
     text-align: center;
-    font-size: larger;
-    /* font-weight: 500; */
+    font-size: 1.7rem;
+
+    transform: rotate(-1deg);
 }
+
+.banner-text:nth-child(2){
+    transform: rotate(1deg);
+}
+
+.banner-text>a{
+    color: blue;
+}
+
 
 .util-content-box{
     position: relative;
@@ -91,12 +124,48 @@
     justify-content: center;
     align-items: center;
 
-    border-radius: 10px;
+    /* border-radius: 10px; */
     background-color: #faedcd;
+
+    box-shadow: 1px 1px 5px  #c9bf8d;
+    /* transform: rotate(1deg); */
+    transition: 0.3s ease-in-out;
 
     /* word-break: break-all; */
     /* border: 2px solid black; */
 }
+
+.util-card::before{
+    content: "O";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: red;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+
+.util-card:hover{
+    box-shadow: 2px 4px 5px  #c9bf8d;
+    transform: translateY(-2%) ;
+    transition: 0.3s ease-in-out;
+}
+
+.util-card:hover::before{
+    content: "X";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: red;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+
+/* .util-card:hover:nth-child(odd){
+    box-shadow: 2px 4px 5px  #c9bf8d;
+    transform: translateY(-2%) ;
+    transition: 0.3s ease-in-out;
+} */
 
 .util-heading{
     /* position: absolute; */
@@ -142,5 +211,9 @@
     }
     .util-card{
         width: 100%;
+    }
+
+    .banner-text,.util-list{
+        font-size: 0.8rem;
     }
 }

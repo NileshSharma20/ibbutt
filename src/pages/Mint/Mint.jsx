@@ -9,23 +9,27 @@ function Mint() {
   const {walletAddress} = useSelector((state) => state.wallet)
 
   function handleConnect(){
-    console.log(`Tohri maiya ka bur`)
     dispatch(connectWallet())
 }
 
   return (
-    <div className='mint-container'>
-      
-      <div className="mint-content">
-        <div className="mint-info">{walletAddress}</div>
-        <div className="mint-btn">Mint</div>
-        <div className="mint-btn"
-          onClick={()=>handleConnect()}
-        >Connect</div>
+    <>
+    {/* <div className="util-container">
+
+    </div> */}
+      <div className='mint-container'>
+        
+        <div className="mint-content">
+          <div className="mint-info">{walletAddress}</div>
+          <div className="mint-btn">Mint</div>
+          <div className="mint-btn"
+            onClick={()=>handleConnect()}
+            >Connect</div>
+        </div>
+        
+        {/* <Socials /> */}
       </div>
-      
-      {/* <Socials /> */}
-    </div>
+    </>
   )
 }
 

@@ -5,8 +5,8 @@ import UtilCard from '../../components/UtilCard'
 
 function Utilities() {
   return (
-    <div className='util-container' style={{backgroundColor:"#fb5607"}}>
-      <div className="util-cover" style={{color:"antiquewhite"}}>
+    <div className='util-container'>
+      <div className="util-cover" >
         Utilities
       </div>
         <div className="util-grid">
@@ -23,7 +23,7 @@ function Utilities() {
             content={['Holder exclusive Merchandise including apparel and jewellery',
             'Collabs with global brands (even with our art)',
             'Giveaways (mainly drugs)',
-            'Launching Grinders, Rolling Paper, and Rolling Cones with the IBBP brand and the NFTs.']} />
+            'Launching Grinders, Rolling Paper, and Rolling Cones with the BP brand and the NFTs.']} />
 
             <UtilCard title={'Web3evolution '}
             content={['Our advisory and incubation venture for Web3 projects (First interview requires you to get high to be eligible).',
@@ -32,6 +32,12 @@ function Utilities() {
             <UtilCard title={'Charity'}
             content={["We will donate to charities that are Web3-friendly, and fight for trees (hopefully the one's we like)."]} />
         
+        </div>
+
+        <div className="banner-text"
+          style={{marginBottom:"5rem", textDecoration:"underline", color:"rgba(255,20,0,0.9)"}}
+        >
+          Holder Exclusive Discord launching soon.
         </div>
     </div>
   )
