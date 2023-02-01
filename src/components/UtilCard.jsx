@@ -12,7 +12,7 @@ function UtilCard({title, content}) {
 
                 {title==="Retail"?
                 <ul className='util-list'>
-                  <li style={{marginBottom:"1rem", listStyleType: "circle"}}>Storage Pouches, Hookahs, Pipes, Bongs, Grinders, Rolling Paper, and Cannabis Vapes among <a target="_blank" rel="noreferrer" href="https://www.cnet.com/culture/best-weed-accessories/">others</a> will be sold with the Booty Puffs branding</li>
+                  <li style={{marginBottom:"1rem", listStyleType: "circle"}}>Storage Pouches, Hookahs, Pipes, Bongs, Grinders, Rolling Paper, and Cannabis Vapes among <a target="_blank" rel="noreferrer" href="https://www.cnet.com/culture/best-weed-accessories/">other</a> cool shit will be sold with the Booty Puffs branding</li>
                   {content.map((item,index)=>
                   <li style={{marginBottom:"1rem", listStyleType: "circle"}}>{item}</li>
                   )}

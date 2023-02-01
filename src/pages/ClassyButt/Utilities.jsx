@@ -20,8 +20,7 @@ function Utilities() {
             'Giveaways (mainly drugs)']} />
 
             <UtilCard title={'Retail'}
-            content={[`Storage Pouches, Hookahs, Pipes, Bongs, Grinders, Rolling Paper, and Cannabis Vapes among ${<a href="https://www.cnet.com/culture/best-weed-accessories/">others</a>} will be sold with the Booty Puffs branding`,
-            "Can be purchased in Fiat, Crypto, or $BUTT",
+            content={["Can be purchased in Fiat, Crypto, or $BUTT",
             "% of profits will be redistributed within the community in the form of giveaways"]} />
         
             <UtilCard title={'Charity'}

@@ -10,9 +10,26 @@
     align-items: center;
 
     /* padding-bottom: 50px; */
+    overflow: hidden;
     background-image: repeating-linear-gradient(white 0px, white 24px, steelblue 25px);
     /* background: url("https://res.cloudinary.com/danielmeilleurimg/tictactoe/chalkboard-250");
     background-size: cover; */
+}
+
+.scribble{
+    position:absolute;
+    top:10%;
+    left:5%;
+    opacity:0.6; 
+    width: 10vw;
+    /* width:10px;
+    height: auto; */
+    /* border: 2px solid red; */
+}
+
+.scribble>img{
+    width: 10vw;
+    object-fit: contain;
 }
 
 .util-container::before {
@@ -86,10 +103,6 @@
     font-size: 1.7rem;
 
     transform: rotate(-1deg);
-}
-
-.banner-text:nth-child(2){
-    transform: rotate(1deg);
 }
 
 .banner-text>a{
@@ -210,6 +223,10 @@
     .util-content-box{
         width: 80%;
         /* border: 2px solid red; */
+    }
+
+    .scribble,.scribble>img{
+        width: 20vw;
     }
 
     .banner-text{
