@@ -7,7 +7,8 @@ import Socials from '../../components/Socials';
 import "./ClassyButt.css"
 import Poster from '../../components/Poster';
 import Utilities from './Utilities';
-import Banner from './Banner';
+import Modal from '../../components/Modal';
+// import Banner from './Banner';
 
 export const Scribble = ({top,left,imgSrc, tilt})=>{
   return(
@@ -28,6 +29,9 @@ function ClassyButt() {
   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
 
   const [mintFlag, setMintFlag] = useState(false)
+  const [shopFlag, setShopFlag] = useState(false)
+  const [stoneFlag, setStoneFlag] = useState(false)
+  const [ittyBittyFlag, setIttyBittyFlag] = useState(false)
 
   const handleScroll =()=>{
     window.scrollTo({top:posterRef.current.offsetTop, behavior:"smooth"})
@@ -48,15 +52,21 @@ function ClassyButt() {
   const scribble13 = "https://ik.imagekit.io/qljqw3tvn/ibb/Untitled_Artwork_8_iq2RbvBBt3.png"
 
 
-  useEffect(()=>{
-      if(mintFlag){
-        navigate('/mint')
-      }
-    },[mintFlag])
+  // useEffect(()=>{
+  //     if(mintFlag){
+  //       navigate('/mint')
+  //     }
+  //   },[mintFlag])
 
   return (
     <>
+
     <div className='util-container' style={{minHeight:"100vh"}}>
+    {shopFlag && <Modal passModalFlag={setShopFlag}/>}
+    {stoneFlag && <Modal passModalFlag={setStoneFlag}/>}
+    {ittyBittyFlag && <Modal passModalFlag={setIttyBittyFlag} />}
+    {mintFlag && <Modal passModalFlag={setMintFlag}/>}
+    
     <div className='nav-container'>
       <div className="circle-on-hover" onClick={()=>window.scrollTo({top:posterRef.current.offsetTop, behavior:"smooth"})}>
         About
@@ -70,19 +80,19 @@ function ClassyButt() {
         Utilities
       </div>
 
-      <div className="circle-on-hover">
+      <div className="circle-on-hover" onClick={(e)=>setShopFlag(true)}>
         Shop
       </div>
 
-      <div className="circle-on-hover">
+      <div className="circle-on-hover" onClick={(e)=>setMintFlag(true)}>
         Mint
       </div>
 
-      <div className="circle-on-hover">
+      <div className="circle-on-hover" onClick={(e)=>setStoneFlag(true)}>
         StoneVerse
       </div>
 
-      <div className="circle-on-hover">
+      <div className="circle-on-hover" onClick={(e)=>setIttyBittyFlag(true)}>
         Itty Bitty
       </div>
 
