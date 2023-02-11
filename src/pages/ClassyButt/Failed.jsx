@@ -31,7 +31,7 @@ function Failed() {
           src="https://ik.imagekit.io/qljqw3tvn/ibb/swine-small.gif" alt = "test"/>
     
       <img className={`classy-butt ${isPortrait ? "classy-butt-mobile":""}`} 
-        src="https://ik.imagekit.io/qljqw3tvn/ibb/MrButt_418OwtD8k.png" alt = "test"/>
+        src="https://ik.imagekit.io/qljqw3tvn/ibb/butt_hwY2-Oz6x.png" alt = "test"/>
     
       <div className={` ${isPortrait?"return-btn-mobile":"return-btn"}`} 
         onClick={()=>setReturnTrue(true)}>

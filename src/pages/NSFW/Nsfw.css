@@ -12,9 +12,23 @@
     z-index:11;
 }
 
+.banner{
+    position: absolute;
+    top:15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    width: clamp(300px, 35vw,35vw);
+    height: auto;
+    object-fit: cover;
+    background-color: rgb(1, 102, 1);
+    border: 0;
+    z-index: 13;
+}
+
 .jointImg{
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -32,6 +46,9 @@
 
 @media only screen and (max-width: 850px) {
     .jointImg{
+        width: clamp(350px, 80vw,80vw);
+    }
+    .banner{
         width: clamp(350px, 80vw,80vw);
     }
 }

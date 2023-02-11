@@ -104,7 +104,7 @@ function ClassyButt() {
           
                 
         <img className={`classy-butt ${isPortrait ? "classy-butt-mobile":""}`} 
-          src="https://ik.imagekit.io/qljqw3tvn/ibb/MrButt_418OwtD8k.png" alt = "test"/>
+          src="https://ik.imagekit.io/qljqw3tvn/ibb/butt_hwY2-Oz6x.png" alt = "test"/>
       
       
       <Socials />
