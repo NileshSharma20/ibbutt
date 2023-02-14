@@ -20,7 +20,7 @@ function Mint() {
       <div className='mint-container'>
         
         <div className="mint-content">
-          <div className="mint-info">{walletAddress}</div>
+          <div className="mint-info">{walletAddress?walletAddress:"Connect first Asshole!"}</div>
           <div className="mint-btn">Mint</div>
           <div className="mint-btn"
             onClick={()=>handleConnect()}
