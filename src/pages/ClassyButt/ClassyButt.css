@@ -60,8 +60,19 @@
   
 
 .failed-back{
-    background-color: rgb(251, 142, 255);
-    background: none;
+    /* background-color: rgb(251, 142, 255); */
+    background: url(https://ik.imagekit.io/qljqw3tvn/ibbutt/bg/rays_Focus...__a0i2nl_gVG.png);
+}
+
+.failed-text-box{
+    width: 40vw;
+    padding: 2rem;
+    border: 0.5rem solid black;
+    border-radius: 20px;
+    font-weight: 800;
+    color: black;
+
+    background-color: rgb(253, 249, 243);
 }
 
 .fake{
@@ -127,7 +138,7 @@
     background-color: antiquewhite; */
     padding: 0.2rem 0.6rem;
     transition: 0.3s ease-in-out;
-    cursor:pointer;
+    /* cursor:pointer; */
     
 }
 
@@ -151,17 +162,17 @@
     cursor:pointer;
 }
 
-.return-btn:hover{
+/* .return-btn:hover{
     transform: scale(0.9);
-    /* filter: drop-shadow(0 0mm 10mm rgb(247, 0, 214)); */
-}
+} */
 
 .classy-butt{
     /* display; */
     position:absolute;
     bottom: 0;
     right: 0;
-    width: 60vw;
+    /* width: 60vw; */
+    width: auto;
     height: auto;
 }
 

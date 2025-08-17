@@ -14,7 +14,7 @@ function Banner() {
 
             <div className="poster-container poster-info">
               <img className={`comic-img poster-img ${isPortrait ? "comic-img-portrait":""}`}  
-                src="https://ik.imagekit.io/qljqw3tvn/ibb/Multi_Frame_Art_Video_XIHK0nLPu.gif" 
+                src="https://ik.imagekit.io/qljqw3tvn/ibbutt/BP_GIF-compressed_i1m0lhnJZ.gif" 
                 alt="comic"/>
             </div>
 

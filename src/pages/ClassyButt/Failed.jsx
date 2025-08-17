@@ -7,6 +7,8 @@ function Failed() {
   const navigate = useNavigate();
   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
 
+  const classButtSrc = "https://ik.imagekit.io/qljqw3tvn/ibbutt/mr-ass-flipped-removebg-preview_vGf4T262S.png"
+
   const [returnTrue, setReturnTrue] = useState(false)
 
   useEffect(()=>{
@@ -18,25 +20,28 @@ function Failed() {
 
   return (
     <>
-    <video autoPlay muted loop 
+    {/* <video autoPlay muted loop 
           className='vid-back'
           poster="images/psy-back-still.png">
             <source src="https://ik.imagekit.io/qljqw3tvn/ibb/psy-back.mp4"
               type="video/mp4"/>
-            {/* <source src='images/psy-light-back.mp4' 
-              type="video/mp4" /> */}
-      </video>
+    </video> */}
     <div className='cb-container failed-back'>
-        <img className={`failed-text-swine ${isPortrait?"failed-text-mobile":""}`} 
-          src="https://ik.imagekit.io/qljqw3tvn/ibb/swine-small.gif" alt = "test"/>
+        {/* <img className={`failed-text-swine ${isPortrait?"failed-text-mobile":""}`} 
+          src="https://ik.imagekit.io/qljqw3tvn/ibb/swine-small.gif" alt = "test"/> */}
+        <p className='failed-text-box'>Get the fuck outta here you uncultured swine!</p>
     
       <img className={`classy-butt ${isPortrait ? "classy-butt-mobile":""}`} 
-        src="https://ik.imagekit.io/qljqw3tvn/ibb/MrButt_418OwtD8k.png" alt = "test"/>
+        src={classButtSrc} alt = "test"/>
     
-      <div className={` ${isPortrait?"return-btn-mobile":"return-btn"}`} 
+      {/* <div className={` ${isPortrait?"return-btn-mobile":"return-btn"}`} 
         onClick={()=>setReturnTrue(true)}>
         <img className='try-again' src='https://ik.imagekit.io/qljqw3tvn/ibb/tryAgain_i_oNCA_sp.gif' alt='try again' />    
-      </div>  
+      </div>   */}
+      <div className={` ${isPortrait?"return-btn-mobile":"return-btn"}`} >
+
+          <button className='primary-btn' type='button'  onClick={()=>setReturnTrue(true)}>Try Again</button>
+      </div>
     </div>
     </>
   )

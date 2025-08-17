@@ -12,7 +12,20 @@ function LandingPage() {
   const jointRef = useRef()
   const fakeFillerRef = useRef()
   const lconRef = useRef()
-  
+
+  // const landingBgCss = 'url(https://ik.imagekit.io/qljqw3tvn/ibbutt/bg/psychedelic_I%20feel%20dizzy...__t08q8NcPB9.png) no-repeat center fixed'
+  const clickToPutItInSrc="https://ik.imagekit.io/qljqw3tvn/ibb/click-to-put-opt.gif"
+  const fullButtSrc="https://ik.imagekit.io/qljqw3tvn/ibbutt/butts/caucasian_Light%20Buns!_%20(1)_OD9DFP0Jbo.png?updatedAt=1755415920472"
+  const halfButtSrc="https://ik.imagekit.io/qljqw3tvn/ibbutt/butts/caucasian_Light%20Buns!__K24vtziqVP.png"
+  const jointSrc = "https://ik.imagekit.io/qljqw3tvn/ibbutt/joint-removebg-preview_3HLzNU2cK.png"
+
+  const unlitLighter = "https://ik.imagekit.io/qljqw3tvn/ibbutt/lighter/L.t.1_uLfIwKf3K.png"
+  const litLighter = "https://ik.imagekit.io/qljqw3tvn/ibbutt/lighter/L.t.2_YLuZDZSgqj.png"
+
+  const smokeImgSrc= "https://ik.imagekit.io/qljqw3tvn/ibbutt/white_cough%20cough__VdGIYUmW4.png"
+  const burntPartSrc = "https://ik.imagekit.io/qljqw3tvn/ibbutt/Burnt%20Part_lC7vwBSdH.png"
+
+
   const [cheekWidth, setCheekWidth] = useState(0);
   // const [wrapperStart, setWrapperStart] = useState(0)
   const [lconWidth, setLconWidth] = useState();
@@ -61,10 +74,10 @@ function LandingPage() {
     // console.log(offsetHeight, offsetWidth);
     // console.log(`diff: ${lconWidth/2 - cheekWidth}`)
     if(isPortrait){
-      setDiff(lconWidth/2 - cheekWidth - lconWidth*0.25-50)
+      setDiff( -1 * (lconWidth/2 - cheekWidth - lconWidth*0.25-50) )
     }
     else{
-      setDiff(lconWidth/2 - cheekWidth - lconWidth*0.25)
+      setDiff( -1 * (lconWidth/2 - cheekWidth - lconWidth*0.25) )
     }
     
   };
@@ -72,13 +85,15 @@ function LandingPage() {
 
   ///////////////////////////////////////////////////////
   useEffect(()=>{
-    if(smoke){
+    if(isAnimating && smoke){
       setTimeout(()=>{
+        setIsAnimating(false)
+        setSmoke(false)
         navigate('/choice')
       },2300)
       
     }
-  },[smoke])
+  },[isAnimating,smoke])
 
 
   useEffect(()=>{
@@ -107,88 +122,92 @@ function LandingPage() {
   }
   },[])
 
- 
-
   return (
     <>
    <BrowserView>
-   <video autoPlay muted loop 
-    className='vid-back'
-    poster="https://ik.imagekit.io/qljqw3tvn/ibb/psy-still.webp"
-    alt="background">
+    {/* <video autoPlay muted loop 
+      className='vid-back'
+      poster="https://ik.imagekit.io/qljqw3tvn/ibbutt/bg/psychedelic_I%20feel%20dizzy...__t08q8NcPB9.png?updatedAt=1755414420120"
+      alt="background">
       <source src="https://ik.imagekit.io/qljqw3tvn/ibb/psy-back.mp4"
               type="video/mp4"/>
-    </video>
+    </video> */}
 
     <div className='landing-container' ref={lconRef}>
         {!isAnimating && 
         <div className='text-box'>
-          <img className='text-box-img' src='https://ik.imagekit.io/qljqw3tvn/ibb/click-to-put-opt.gif' alt='Put it in'/>
+          <p>Click to put it in!</p>
+          {/* <img className='text-box-img' src='https://ik.imagekit.io/qljqw3tvn/ibbutt/bbq_mHc4OQzGg.gif' alt='Put it in'/> */}
         </div>}
 
         {isAnimating && !smoke && 
         <div className='text-box'>
-          <img className='text-box-img' src='https://ik.imagekit.io/qljqw3tvn/ibb/light-it-up-opt_YEsJ9qYPZp.gif' alt='Light it up, bitches'/>
+          <p>Light it up, bitches!</p>
+          {/* <img className='text-box-img' src='https://ik.imagekit.io/qljqw3tvn/ibb/light-it-up-opt_YEsJ9qYPZp.gif' alt='Light it up, bitches'/> */}
         </div>}
         
         <img className='landing-img butt-land' 
-          src="https://ik.imagekit.io/qljqw3tvn/ibb/full-butt.png" 
-          alt = "lightbutt"/>
+          src={fullButtSrc} 
+          alt = "lightbutt"
+        />
           
-          <img className='butt-half-land' 
-            ref={leftCheekRef} 
-            onLoad={onImgLoad}
-            src="https://ik.imagekit.io/qljqw3tvn/ibb/butt-half.png" 
-            alt = "lightbutt-half"/>
+        <img className='butt-half-land' 
+          ref={leftCheekRef} 
+          // onLoad={onImgLoad}
+          src={halfButtSrc}
+          alt = "lightbutt-half"
+        />
 
           
-          <div className="fake-filler" ref={fakeFillerRef}></div>
+        <div className="fake-filler" ref={fakeFillerRef}></div>
 
         <motion.div className="img-wrapper"
           initial={{x:0}}
           animate={{
-            x:isAnimating?-diff:0, 
-            }}
+            x:isAnimating? diff:0, 
+          }}
           transition={{type:"tween", duration:2}}
           onClick={()=>handleImgClick()}
           ref = {jointRef}
         >
         <img className='joint-land' 
-            src="https://ik.imagekit.io/qljqw3tvn/ibb/joint.png" 
-            alt = "joint"
-            />
+          src={jointSrc}
+          alt = "joint"
+        />
           
         
-          {isAnimating&&smoke?
+        {isAnimating && smoke &&
           <div className="smoke-box">
             <motion.img className='smoke-img' 
-              src= "https://ik.imagekit.io/qljqw3tvn/tr:w-400/ibb/smoke.png" 
+              src= {smokeImgSrc} 
               alt="smoke"
               initial={{opacity:0}}
               animate={{opacity:1}}
               transition={{duration:0.8}} />
             
-            <motion.img className='burnt-img' 
-              src= "https://ik.imagekit.io/qljqw3tvn/ibb/burnt-part.png" 
+            {/* <motion.img className='burnt-img' 
+              src= {burntPartSrc} 
               alt="burnt"
               initial={{opacity:0}}
               animate={{opacity:1}}
-              transition={{duration:0.8}} />
+              transition={{duration:0.8}} /> */}
           </div>
-            :<></>}
+          // :
+          // <></>
+          }
 
         
         </motion.div>
         {isAnimating?
         <motion.img
-          src='https://ik.imagekit.io/qljqw3tvn/ibb/puffs-lit.png' 
+          src={litLighter}
           className='cursor'
           variants={variants}
           animate={cursorVarint}
           />
         :
         <motion.img
-          src='https://ik.imagekit.io/qljqw3tvn/ibb/puffs-unlit.png' 
+          src={unlitLighter} 
           className='cursor'
           variants={variants}
           animate={cursorVarint}
@@ -209,12 +228,12 @@ function LandingPage() {
         </video> */}
         
         <div className="landing-container" ref={lconRef}
-        style={{background:"url(https://ik.imagekit.io/qljqw3tvn/ibb/psy-still.webp) no-repeat center fixed"}} 
+        // style={{background:`${landingBgCss}`}} 
         >
        
         {!isAnimating && 
         <div className='text-box text-mobile'>
-          <img className='text-box-img-mobile' src='https://ik.imagekit.io/qljqw3tvn/ibb/click-to-put-opt.gif' alt='Put it in'/>
+          <img className='text-box-img-mobile' src={clickToPutItInSrc} alt='Put it in'/>
         </div>}
 
         {isAnimating && !smoke && 
@@ -223,7 +242,7 @@ function LandingPage() {
         </div>}
         
         <img className={`landing-img butt-land ${isPortrait? "butt-land-mobile":""}`} 
-          src="https://ik.imagekit.io/qljqw3tvn/ibb/full-butt.png" 
+          src="https://ik.imagekit.io/qljqw3tvn/ibbutt/butts/caucasian_Light%20Buns!_%20(1)_OD9DFP0Jbo.png?updatedAt=1755415920472" 
           alt = "lightbutt"/>
           
           <img className={`butt-half-land ${isPortrait? "butt-half-mobile":""}`} 
@@ -238,7 +257,7 @@ function LandingPage() {
         <motion.div className={`img-wrapper ${isPortrait?"img-wrapper-mobile":""}`}
           initial={{x: 0}}
           animate={{
-            x:isAnimating?-diff:0, 
+            x:isAnimating ? diff:0, 
             }}
           transition={{type:"tween", duration:2}}
           onClick={()=>handleImgClick()}
@@ -260,7 +279,7 @@ function LandingPage() {
               transition={{duration:0.8}} />
             
             <motion.img className={`burnt-img ${isPortrait?"burnt-img-mobile":""}`} 
-              src= "https://ik.imagekit.io/qljqw3tvn/ibb/burnt-part.png" 
+              src= {burntPartSrc} 
               alt="burnt"
               initial={{opacity:0}}
               animate={{opacity:1}}
@@ -272,14 +291,14 @@ function LandingPage() {
         </motion.div>
         {isAnimating?
         <motion.img
-          src='https://ik.imagekit.io/qljqw3tvn/ibb/puffs-lit.png' 
+          src={litLighter} 
           className='cursor'
           variants={variants}
           animate={cursorVarint}
           />
         :
         <motion.img
-          src='https://ik.imagekit.io/qljqw3tvn/ibb/puffs-unlit.png' 
+          src={unlitLighter} 
           className='cursor'
           variants={variants}
           animate={cursorVarint}
@@ -323,7 +342,7 @@ function LandingPage() {
         <motion.div className={`img-wrapper ${isPortrait?"img-wrapper-mobile":""}`}
           initial={{x: 0}}
           animate={{
-            x:isAnimating?-diff:0, 
+            x:isAnimating ? diff:0, 
             }}
           transition={{type:"tween", duration:2}}
           onClick={()=>handleImgClick()}
@@ -335,7 +354,7 @@ function LandingPage() {
             />
           
         
-          {isAnimating&&smoke?
+          {isAnimating && smoke?
           <div className={`${isPortrait?"smoke-box-mobile":"smoke-box"}`}>
             <motion.img className={`smoke-img ${isPortrait?"smoke-img-mobile":""}`} 
               src= "https://ik.imagekit.io/qljqw3tvn/tr:w-400/ibb/smoke.png" 
@@ -357,14 +376,14 @@ function LandingPage() {
         </motion.div>
         {isAnimating?
         <motion.img
-          src='https://ik.imagekit.io/qljqw3tvn/ibb/puffs-lit.png' 
+          src={litLighter} 
           className='cursor'
           variants={variants}
           animate={cursorVarint}
           />
         :
         <motion.img
-          src='https://ik.imagekit.io/qljqw3tvn/ibb/puffs-unlit.png' 
+          src={unlitLighter} 
           className='cursor'
           variants={variants}
           animate={cursorVarint}

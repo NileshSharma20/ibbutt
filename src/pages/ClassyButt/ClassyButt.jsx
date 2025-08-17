@@ -15,6 +15,7 @@ function ClassyButt() {
   const posterRef = useRef(null);
 
   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+  const classButtSrc = "https://ik.imagekit.io/qljqw3tvn/ibbutt/mr-ass-flipped-removebg-preview_vGf4T262S.png"
 
   const [mintFlag, setMintFlag] = useState(false)
 
@@ -42,13 +43,16 @@ function ClassyButt() {
             </div>
           </div> */}
         
-        <img className={`failed-text-swine ${isPortrait?"failed-text-mobile-success":""}`} 
+        {/* <img className={`failed-text-swine ${isPortrait?"failed-text-mobile-success":""}`} 
             src="https://ik.imagekit.io/qljqw3tvn/ibb/splendor-small.gif" 
-            alt = "test"/>
+            alt = "test"/> */}
+        <p className='failed-text-box' style={{fontSize:'3rem',wordSpacing:'0.2rem'}}>
+          Splendid! Finally a man of impeccable taste!
+        </p>
           
                 
         <img className={`classy-butt ${isPortrait ? "classy-butt-mobile":""}`} 
-          src="https://ik.imagekit.io/qljqw3tvn/ibb/MrButt_418OwtD8k.png" alt = "test"/>
+          src={classButtSrc} alt = "test"/>
       
       
       <Socials />
