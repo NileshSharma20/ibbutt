@@ -6,8 +6,8 @@
     align-items: center;
     justify-content: center;
 
-    background: url(https://ik.imagekit.io/qljqw3tvn/ibb/rad.webp) fixed center no-repeat;
-    background-size: cover;
+    /* background: url(https://ik.imagekit.io/qljqw3tvn/ibb/rad.webp) fixed center no-repeat; */
+    /* background-size: cover; */
     /* background-color: #90be6d; */
     font-size: 5rem;
     color: white;
@@ -60,8 +60,32 @@
   
 
 .failed-back{
-    /* background-color: rgb(251, 142, 255); */
-    background: url(https://ik.imagekit.io/qljqw3tvn/ibbutt/bg/rays_Focus...__a0i2nl_gVG.png);
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 5rem;
+
+    overflow: hidden;
+}
+
+.failed-back-bg-img{
+    position: absolute;
+    width: 100vw;
+    height: 110%;
+    object-fit: cover;
+
+    animation: rotate-bg-anim 10s linear 0s infinite;
+    z-index: -1;
+}
+
+@keyframes rotate-bg-anim {
+    from{filter: hue-rotate(0deg);}
+    to{filter: hue-rotate(360deg);}
 }
 
 .failed-text-box{
@@ -71,6 +95,9 @@
     border-radius: 20px;
     font-weight: 800;
     color: black;
+    text-align: center;
+
+
 
     background-color: rgb(253, 249, 243);
 }
@@ -172,11 +199,38 @@
     bottom: 0;
     right: 0;
     /* width: 60vw; */
-    width: auto;
+    width: 35vw;
     height: auto;
 }
 
 .classy-butt-mobile{
     width: 100vw;
     /* height: 40vh; */
+}
+
+.classy-butt-mobile{
+    height: 40vh;
+    width: auto;
+}
+
+@media only screen and (max-width: 850px) {
+    .failed-text-box{
+        position: absolute;
+        top: 30%;
+        right: 50%;
+
+        transform: translate(50%,-50%);
+
+        width: 80vw;
+        padding: 0.5rem;
+        border: 0.5rem solid black;
+        border-radius: 20px;
+
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 800;
+        color: black;
+
+        background-color: rgb(253, 249, 243);
+    }
 }

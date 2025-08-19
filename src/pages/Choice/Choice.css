@@ -1,4 +1,5 @@
 .choice-container{
+    position: relative;
     width: 100%;
     height: 100vh;
 
@@ -7,9 +8,18 @@
     justify-content: center;
 
     /* background: url(../../background-image/psy2-back.png) no-repeat center fixed; */
-    background: url(https://ik.imagekit.io/qljqw3tvn/ibbutt/bg/psychedelic_I%20feel%20dizzy...__t08q8NcPB9.png);
+    /* background: url(https://ik.imagekit.io/qljqw3tvn/ibbutt/bg/psychedelic_I%20feel%20dizzy...__t08q8NcPB9.png); */
     background-size: cover;
+    overflow: hidden;
     /* background-color: #FFBE0B; */
+}
+
+.choice-bg-img{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 110%;
+    animation: psy-bg 8s infinite linear;
 }
 
 .choice-back{
@@ -68,10 +78,17 @@
 
 .choice-text{
     position: fixed;
-    top: 0;
+    top: 10%;
+
+    padding: 1rem;
+    border: 0.8rem solid black;
     text-align: center;
     font-size: 4rem;
+    font-weight: 800;
     color:  black;
+
+
+    background-color: white;
     /* border: 2px solid red; */
 }
 
@@ -88,10 +105,10 @@
 
 @media only screen and (max-width: 850px) {
     .choice-text{
-        top:-20px;
-        min-width: none;
-        /* width: 15vw; */
-        /* border: 2px solid black; */
+        top:10%;
+        width: 50vw;
+        font-size: 2rem;
+        border: 0.5rem solid black;
     }
 
     .choose-img-text{

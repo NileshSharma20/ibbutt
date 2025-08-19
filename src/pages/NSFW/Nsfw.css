@@ -1,37 +1,184 @@
 .nsfw-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    height: 100vh;
+    /* background: url(https://ik.imagekit.io/qljqw3tvn/ibbutt/bg/rainbow%20gradient_M_%20Feeling%20Lucky!__VIzKr1PEAe.png) fixed center no-repeat; */
+    background-size: cover;
+    /* filter: blur(5px); */
+    /* -webkit-filter: blur(5px); */
+    /* z-index:11; */
+
+    overflow: hidden;
+}
+
+.nsfw-bg-img{
     position: absolute;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    animation: psy-bg 5s infinite 0s linear;
+}
+
+
+
+.nsfw-container>h1{
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+
+    padding: 0.5rem 1rem;
+
+    background-color: black;
+    /* font-family: "TheanoDidot"; */
+}
+
+.nsfw-container>h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+
+    padding: 0.5rem 1rem;
+
+    background-color: black;
+    /* font-family: "TheanoDidot"; */
+}
+
+.disappear-anim{
+    animation: disappear 2s ease-in-out;
+}
+
+@keyframes disappear-text{
+    from {opacity: 100%;}
+    to {opacity: 0%;}
+}
+
+.nsfw-img-box{
+    position: relative;
+    /* width: 60vw; */
+    height: auto;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
-    background: url(https://ik.imagekit.io/qljqw3tvn/ibb/rad.webp) fixed center no-repeat;
-    background-size: cover;
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    z-index:11;
+    /* border: 1px solid red; */
 }
 
 .jointImg{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     width: clamp(200px, 35vw,35vw);
     height: auto;
     object-fit: cover;
     cursor: pointer;
+    transform: scale(1) rotate(0deg);
     transition: 0.4s ease-in-out;
     z-index: 13;
 }
 
 .jointImg:hover{
-    transform: rotate(1deg) translate(-50%, -50%) ;
+    transform: scale(1.1) rotate(-5deg);
+}
+
+@keyframes joint-anim {
+    from{}
+    to{}
+}
+
+.lighter-nsfw{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(100%, 0%);
+
+    width: clamp(200px, 5vw,5vw);
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    z-index: 13;
+
+    animation: lighter-appear 0.5s ease-in;
+}
+
+@keyframes lighter-appear {
+    from{
+        opacity: 0;
+        transform: translate(150%, 0%);
+    }
+
+    to{
+        opacity: 100%;
+        transform: translate(100%, 0%);
+    }
+}
+
+.smoke-nsfw{
+    position: absolute;
+    bottom: 110%;
+    right: -10%;
+    transform: translate(35%, 0);
+            /* rotate(35deg); */
+
+    width: auto;
+    opacity: 0;
+    height: 60vh;
+    object-fit: cover;
+    cursor: pointer;
+    /* border: 1px solid purple; */
+    /* transition: 0.4s ease-in-out; */
+    z-index: 11;
+
+    animation: smoke-appear 0.5s ease-in 0.8s forwards;
+}
+
+@keyframes smoke-appear {
+    from{
+        opacity: 0;
+        /* transform: translate(150%, 0%); */
+    }
+
+    to{
+        opacity: 100%;
+        /* transform: translate(100%, 0%); */
+    }
 }
 
 @media only screen and (max-width: 850px) {
     .jointImg{
-        width: clamp(350px, 80vw,80vw);
+        /* width: clamp(350px, 80vw,80vw); */
+        width: clamp(100px, 40vw,40vw);
+    }
+
+    .lighter-nsfw{
+        width: clamp(80px, 10vw,10vw);
+    }
+
+    .smoke-nsfw{
+        /* width: 20vw; */
+        transform: translate(55%, 0);
+    }
+
+    .nsfw-container>h1{
+        font-size: 4rem;
+        font-weight: 600;
+        color: white;
+
+        padding: 0.5rem 1rem;
+
+        background-color: black;
+        /* font-family: "TheanoDidot"; */
+    }
+
+    .nsfw-container>h2{
+        font-size: 1rem;
+        font-weight: 600;
+        color: white;
+
+        padding: 0.5rem 1rem;
+
+        background-color: black;
+        /* font-family: "TheanoDidot"; */
     }
 }

@@ -5,6 +5,10 @@
   font-family: Stray Cat;
   background-color: gray;
 }
+@font-face{
+  src: url"./fonts/TheanoDidot-Regular.ttf";
+  font-family: TheanoDidot;
+}
 
 * {
   box-sizing: border-box;
@@ -34,11 +38,18 @@
 
   border: 0.3rem solid black;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 800;
 
   cursor: pointer;
 }
 
+@keyframes psy-bg{
+    from{filter: hue-rotate(0deg);}
+    to{filter: hue-rotate(360deg);}
+    /* 50%{filter: hue-rotate(90deg);}
+    750%{filter: hue-rotate(45deg);}
+    100%{filter: hue-rotate(0deg);} */
+}
 
 .btn{
   position: absolute;
@@ -55,12 +66,29 @@
   color:black;
   background-color: antiquewhite;
   border: 0.3rem solid black;
-  z-index: 10;
+  z-index: 12;
   cursor: pointer;
+}
+
+.container-bg-img{
+  position: absolute;
+  top: 0;
+
+  width: 100vw;
+  height: 110%;
+
+  object-fit: fill;
+  z-index: -1;
+
 }
 
 @media only screen and (max-width: 850px) {
   .btn{
     right: 30px;
+  }
+
+  .primary-btn{
+    font-size: 1rem;
+    font-weight: 800;
   }
 }

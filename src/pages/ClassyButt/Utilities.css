@@ -180,6 +180,7 @@
     width: 100%;
 
     font-size: 1.2rem;
+    font-weight: 800;
     list-style-position: outside;
     /* border: 2px solid black; */
 }
@@ -213,7 +214,12 @@
     }
 
     .banner-text{
-        font-size: 0.8rem;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    .banner-text>h2{
+        font-size: 2rem;
+        font-weight: 800;
     }
     .util-list{
         font-size: 0.8rem;

@@ -8,6 +8,7 @@ import Choice from './pages/Choice/Choice';
 import ClassyButt from './pages/ClassyButt/ClassyButt';
 import Failed from './pages/ClassyButt/Failed';
 import Mint from './pages/Mint/Mint';
+import NotFound from './pages/NotFound/NotFound';
 
 
 function App() {
@@ -27,11 +28,13 @@ function App() {
       <Player url={music_url} playFlag={playMusicFlag} />
         <Routes>
           <Route path="/" element={<Nsfw passMusicFlag={setPlayMusicFlag} />} />
-          <Route path='/light-it-up' element={<LandingPage />} />
+          {/* <Route path='/light-it-up' element={<LandingPage />} /> */}
           <Route path='/choice' element={<Choice />} />
           <Route path='/failed' element={<Failed />} />
           <Route path='/welcome' element={<ClassyButt />} />
           <Route path='/mintOnHold' element={<Mint />} />
+
+          <Route path='*' element={<NotFound/>} />
         </Routes>
       </div>
     </Router>
