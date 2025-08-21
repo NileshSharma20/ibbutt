@@ -8,7 +8,10 @@ function Choice() {
   const navigate = useNavigate();
   const [failedFlag, setFailedFlag] = useState(false)
   const [passedFlag, setPassedFlag] = useState(false)
+
   const bgImg = "https://ik.imagekit.io/qljqw3tvn/ibbutt/bg/psychedelic_I%20feel%20dizzy...__t08q8NcPB9.png"
+  const boobImgSrc="https://ik.imagekit.io/qljqw3tvn/ibbutt/boob-Photoroom-enlarged-upscaled-2_CdsBmt3a7E.png"
+  const buttImgSrc = "https://ik.imagekit.io/qljqw3tvn/ibbutt/butt-Photoroom-enlarged-upscaled_QorIY_hvy.png"
 
   const audioRef = useRef();
 
@@ -41,14 +44,14 @@ function Choice() {
       
       <div className="choice-box">
         <img className='choice-img boobs' 
-          src="https://ik.imagekit.io/qljqw3tvn/ibb/Chest.png"
+          src={boobImgSrc}
           onClick={()=>setFailedFlag(true)} 
           alt = "boobs"/>
 
         {/* <img className='choice-img line' src='https://ik.imagekit.io/qljqw3tvn/ibbutt/line-bulb_AsVq-xxT5D.PNG' alt="line"/> */}
       
         <img className='choice-img butt' 
-          src="https://ik.imagekit.io/qljqw3tvn/ibb/choice-butt_9UFmYrnB4.png" 
+          src={buttImgSrc}
           onClick={()=>setPassedFlag(true)}
           alt = "butts"/>
       </div>
