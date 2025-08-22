@@ -1,22 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.85010a38.chunk.css",
-    "main.js": "/static/js/main.ebbd6238.chunk.js",
-    "main.js.map": "/static/js/main.ebbd6238.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.9bdf1ce4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.9bdf1ce4.js.map",
-    "static/js/2.4e3ca2ba.chunk.js": "/static/js/2.4e3ca2ba.chunk.js",
-    "static/js/2.4e3ca2ba.chunk.js.map": "/static/js/2.4e3ca2ba.chunk.js.map",
+    "main.css": "/static/css/main.0da2be33.css",
+    "main.js": "/static/js/main.626cc8e0.js",
+    "static/media/TheanoDidot-Regular.ttf": "/static/media/TheanoDidot-Regular.1fb7644d6925a261981d.ttf",
+    "static/media/Stray-Cat.ttf": "/static/media/Stray-Cat.a04d5a3a81fdc991d498.ttf",
     "index.html": "/index.html",
-    "static/css/main.85010a38.chunk.css.map": "/static/css/main.85010a38.chunk.css.map",
-    "static/js/2.4e3ca2ba.chunk.js.LICENSE.txt": "/static/js/2.4e3ca2ba.chunk.js.LICENSE.txt",
-    "static/media/Poster.css": "/static/media/TheanoDidot-Regular.1fb7644d.ttf",
-    "static/media/Mint.css": "/static/media/weed-back.fb96b5ff.png"
+    "main.0da2be33.css.map": "/static/css/main.0da2be33.css.map",
+    "main.626cc8e0.js.map": "/static/js/main.626cc8e0.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.9bdf1ce4.js",
-    "static/js/2.4e3ca2ba.chunk.js",
-    "static/css/main.85010a38.chunk.css",
-    "static/js/main.ebbd6238.chunk.js"
+    "static/css/main.0da2be33.css",
+    "static/js/main.626cc8e0.js"
   ]
 }
